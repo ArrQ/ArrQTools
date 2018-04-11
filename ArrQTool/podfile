@@ -1,0 +1,20 @@
+platform :ios, '8.0'
+target ‘ArrQTool’ do
+  pod 'AFNetworking'
+  pod 'JSONModel'
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'MBProgressHUD'
+  pod 'FCUUID'
+  pod 'Masonry'
+  pod 'SGPagingView'
+  pod 'HMSegmentedControl'
+  pod 'IQKeyboardManager'
+  pod 'FSCalendar'
+  pod 'FMDB'
+  pod 'DXPopover'
+  pod 'TFHpple'
+  pod 'KVOController'
+
+end
+
