@@ -62,7 +62,7 @@ static YYFMDBManager *manager = nil;
     if (success) {
         // 数据库创建成功!
         NSLog(@"数据库创建成功!");
-        NSString *sqlStr = @"CREATE TABLE IF NOT EXISTS ShangPinDataTableOne (id INTEGER, cid TEXT, name TEXT, parent_cid TEXT, is_parent TEXT, status TEXT, taosir_cat TEXT, attr_key TEXT, attr_value TEXT, sort INTEGER, isuse INTEGER, candel INTEGER);";
+        NSString *sqlStr = @"CREATE TABLE IF NOT EXISTS ShangPinDataTableOne (id INTEGER, cid TEXT, name TEXT, parent_cid TEXT, is_parent TEXT, status TEXT, taosir_cat TEXT, attr_key TEXT, attr_value TEXT, sort INTEGER, isuse INTEGER, candel INTEGER);";// 
         BOOL successT = [self.db executeUpdate:sqlStr];
         if (successT) {
             // 创建表成功!
