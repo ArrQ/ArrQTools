@@ -168,6 +168,8 @@
 		75A3A8F5200A0B5E00493A34 /* ShangPinData.db in Resources */ = {isa = PBXBuildFile; fileRef = 75A3A8F4200A0B5E00493A34 /* ShangPinData.db */; };
 		75A3A8F8200A4C1A00493A34 /* xingxingzuohao.db in Resources */ = {isa = PBXBuildFile; fileRef = 75A3A8F7200A4C1A00493A34 /* xingxingzuohao.db */; };
 		75A3A8FB200A4C6500493A34 /* XingXingzuohaoFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3A8FA200A4C6500493A34 /* XingXingzuohaoFMDBManager.m */; };
+		75BE13CB2091711C000AB938 /* showCheckVersionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE13CA2091711C000AB938 /* showCheckVersionVC.m */; };
+		75BE13CE20917282000AB938 /* CheckVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BE13CD20917282000AB938 /* CheckVersionManager.m */; };
 		75F39FE1206A0E2400FA8290 /* CommonFieldTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F39FDE206A0E2400FA8290 /* CommonFieldTextView.m */; };
 		75F39FE2206A0E2400FA8290 /* CommonYanZhengMaFieldTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F39FE0206A0E2400FA8290 /* CommonYanZhengMaFieldTextView.m */; };
 		75F39FEE206A0EA700FA8290 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F39FE5206A0EA700FA8290 /* RegisterVC.m */; };
@@ -497,6 +499,10 @@
 		75A3A8F7200A4C1A00493A34 /* xingxingzuohao.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = xingxingzuohao.db; sourceTree = "<group>"; };
 		75A3A8F9200A4C6500493A34 /* XingXingzuohaoFMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XingXingzuohaoFMDBManager.h; sourceTree = "<group>"; };
 		75A3A8FA200A4C6500493A34 /* XingXingzuohaoFMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XingXingzuohaoFMDBManager.m; sourceTree = "<group>"; };
+		75BE13C92091711C000AB938 /* showCheckVersionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showCheckVersionVC.h; sourceTree = "<group>"; };
+		75BE13CA2091711C000AB938 /* showCheckVersionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showCheckVersionVC.m; sourceTree = "<group>"; };
+		75BE13CC20917282000AB938 /* CheckVersionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckVersionManager.h; sourceTree = "<group>"; };
+		75BE13CD20917282000AB938 /* CheckVersionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckVersionManager.m; sourceTree = "<group>"; };
 		75F39FDD206A0E2400FA8290 /* CommonFieldTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFieldTextView.h; sourceTree = "<group>"; };
 		75F39FDE206A0E2400FA8290 /* CommonFieldTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFieldTextView.m; sourceTree = "<group>"; };
 		75F39FDF206A0E2400FA8290 /* CommonYanZhengMaFieldTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonYanZhengMaFieldTextView.h; sourceTree = "<group>"; };
@@ -1313,6 +1319,7 @@
 		75701A2F1FDECAB700374E9A /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				75BE13C42091707F000AB938 /* 版本更新 */,
 				751B460B207D9B9A002F087C /* 头文件的运用 */,
 				751B4607207CB20F002F087C /* 监听工具 */,
 				75630C19206C852D007251B3 /* collectionView(工具) */,
@@ -1615,6 +1622,25 @@
 				75A3A8F4200A0B5E00493A34 /* ShangPinData.db */,
 			);
 			path = "数据库";
+			sourceTree = "<group>";
+		};
+		75BE13C42091707F000AB938 /* 版本更新 */ = {
+			isa = PBXGroup;
+			children = (
+				75BE13C92091711C000AB938 /* showCheckVersionVC.h */,
+				75BE13CA2091711C000AB938 /* showCheckVersionVC.m */,
+				75BE13CF2091735A000AB938 /* 版本更新器 */,
+			);
+			path = "版本更新";
+			sourceTree = "<group>";
+		};
+		75BE13CF2091735A000AB938 /* 版本更新器 */ = {
+			isa = PBXGroup;
+			children = (
+				75BE13CC20917282000AB938 /* CheckVersionManager.h */,
+				75BE13CD20917282000AB938 /* CheckVersionManager.m */,
+			);
+			path = "版本更新器";
 			sourceTree = "<group>";
 		};
 		75F39FD8206A0D4900FA8290 /* 登录注册 */ = {
@@ -1934,6 +1960,7 @@
 				751B5EAD203EB43C000F31FE /* xiaLaZiDingYiVC.m in Sources */,
 				7518D28A1FF553210008871F /* UIView+Extension.m in Sources */,
 				75701A781FDED32200374E9A /* person.m in Sources */,
+				75BE13CB2091711C000AB938 /* showCheckVersionVC.m in Sources */,
 				75701A4F1FDECE4300374E9A /* SelCell.m in Sources */,
 				7514A240204CE4D100490ED2 /* showHtmlTitleMore.m in Sources */,
 				7506B9281FDF949D00DCD6D2 /* showxuanzhuangViewController.m in Sources */,
@@ -1975,6 +2002,7 @@
 				7532EA2B202546B400FD6AF2 /* YuLanTableViewCell.m in Sources */,
 				75701B541FDEDC3700374E9A /* DKSHTMLController.m in Sources */,
 				75701AB81FDED7AC00374E9A /* DDSectionModel.m in Sources */,
+				75BE13CE20917282000AB938 /* CheckVersionManager.m in Sources */,
 				754549C21FFB312B00A5B3CD /* shunzibaozhiduiziVC.m in Sources */,
 				75F39FF9206A0EB800FA8290 /* LoginView.m in Sources */,
 				751C5CA12041149900B1D694 /* AddressPickerView.m in Sources */,
