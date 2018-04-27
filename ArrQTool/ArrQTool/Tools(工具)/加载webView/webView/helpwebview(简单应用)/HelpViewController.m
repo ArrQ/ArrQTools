@@ -169,7 +169,7 @@
 {
     if (_progress == nil)
     {
-        _progress = [[UIProgressView alloc]initWithFrame:CGRectMake(0, Frank_StatusAndNavBar_Height, SCREEN_WIDTH, 2)];
+        _progress = [[UIProgressView alloc]initWithFrame:CGRectMake(0, [[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height, [UIScreen mainScreen].bounds.size.width, 2)];
         _progress.tintColor = [UIColor blueColor];
         _progress.backgroundColor = [UIColor lightGrayColor];
         [self.view addSubview:_progress];

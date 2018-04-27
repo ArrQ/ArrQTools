@@ -10,6 +10,19 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "sys/utsname.h"
 @implementation NSString (Category)
+
+//获取当前设备中应用的版本号
+
++ (NSString *)getCurrentAPPVersion{
+    
+    NSDictionary *dicOne = [[NSBundle mainBundle] infoDictionary];
+    
+    NSString *currentVersion = [dicOne objectForKey:@"CFBundleShortVersionString"];
+
+    return currentVersion;
+    
+}
+
 //计算字符串空间
 - (CGRect)rectWithStringBoundingSize:(CGSize )stringSize withStringFont:(UIFont *)font{
     CGRect rect = [self boundingRectWithSize:stringSize options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:font} context:nil];
@@ -346,6 +359,133 @@
     return currentTimeString;
     
 }
+
+
+// pragma mark --- 时间戳的差
++ (NSTimeInterval )getTimeStrCha:(NSString *)beginTimestamp andstr:(NSString *)endTimestamp{
+    
+    NSDate* date = [NSDate dateWithTimeIntervalSince1970:[beginTimestamp doubleValue]];
+    
+    NSDate *date2 = [NSDate dateWithTimeIntervalSince1970:[endTimestamp doubleValue]];
+    
+    NSTimeInterval seconds = [date2 timeIntervalSinceDate:date];
+    
+    return seconds;
+    
+}
+
+
+
+
+
+# pragma mark - url 中文格式化
++ (NSString *)getBase64UrlWithString:(NSString *)decodeString{
+    
+    NSString *base64String;
+    /*! ios9适配的话 打开第一个 */
+    if ([[UIDevice currentDevice] systemVersion].floatValue >= 9.0)
+    {
+        
+        
+        NSString *charactersToEscape = @"?!@#$^&%*+,:;='\"`<>()[]{}/\\| ";
+        
+        NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
+        
+        base64String = [decodeString stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+        
+        
+    }else{
+        base64String = [decodeString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    }
+    
+    
+    
+    
+    return base64String;
+    
+    
+}
+
+
+#pragma mark - url 中文格式化
++ (NSString *)getStrUTF8Encoding:(NSString *)str
+{
+    /*! ios9适配的话 打开第一个 */
+    if ([[UIDevice currentDevice] systemVersion].floatValue >= 9.0)
+    {
+        return [str stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+    }else{
+        return [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    }
+}
+
+
+
+# pragma mark --- json 字典 02 --
++ (NSDictionary *)getDicWithJsonString:(NSString *)jsonString{
+    
+    NSDictionary *retDict = nil;
+    if ([jsonString isKindOfClass:[NSString class]]) {
+        NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+        retDict = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:NULL];
+        return  retDict;
+    }else{
+        return retDict;
+    }
+    
+}
+
+
+# pragma mark --- json 字符串 ---
++ (NSString *)getJsonStringWithDictionary:(NSDictionary *)dic
+{
+    NSError *parseError = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&parseError];
+    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+
+
+//存储Json
++ (void)saveJsonData:(NSDictionary *)responseBody AndFileName:(NSString *)name
+{
+    NSLog(@"得到的数据 📚 %@",responseBody);
+    if (responseBody == nil) {
+        return;
+    }
+    NSData *data = [NSJSONSerialization dataWithJSONObject:responseBody options:NSJSONWritingPrettyPrinted error:nil];
+    //    将Json存进本地文件夹
+    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString * path = [paths objectAtIndex:0];
+    NSString * Json_path = [path stringByAppendingPathComponent:name];
+    //==写入文件
+    NSLog(@"%@",[data writeToFile:Json_path atomically:YES] ? @"Succeed":@"Failed");
+    
+}
++ (NSDictionary *)getDataAndFileName:(NSString *)name
+{
+    //    读取Json
+    //==Json文件路径
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path=[paths objectAtIndex:0];
+    NSString *Json_path=[path stringByAppendingPathComponent:name];
+    //==Json数据
+    NSData *data=[NSData dataWithContentsOfFile:Json_path];
+    //==JsonObject、
+    if (data == nil)
+    {
+        return nil;
+    }else
+    {
+        NSDictionary * JsonObject=[NSJSONSerialization JSONObjectWithData:data
+                                                                  options:NSJSONReadingAllowFragments
+                                                                    error:nil];
+        
+        return JsonObject;
+    }
+    
+    
+}
+
 
 
 
