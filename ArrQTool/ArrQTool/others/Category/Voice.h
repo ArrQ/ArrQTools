@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVSpeechSynthesis.h>
+#import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 @interface Voice : NSObject <AVSpeechSynthesizerDelegate>
 /**文字转化为语音*/
