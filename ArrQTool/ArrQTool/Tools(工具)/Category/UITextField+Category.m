@@ -23,6 +23,7 @@
     imageView.image = [UIImage imageNamed:name];
     textField.leftViewMode = UITextFieldViewModeAlways;
     return textField;
-
+    
 }
+
 @end

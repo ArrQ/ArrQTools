@@ -95,4 +95,9 @@
 + (void)saveJsonData:(NSDictionary *)responseBody AndFileName:(NSString *)name;
 + (NSDictionary *)getDataAndFileName:(NSString *)name;
 
+
+
+
+
+
 @end
