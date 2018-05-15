@@ -28,7 +28,7 @@
 #import "MoreCommonHeader.h"
 
 #import "NSString+Category.h"
-#import "UIColor+HexRGB.h"
+#import "UIColor+Extension.h"
 #import "UIView+Extension.h"
 
 #endif /* ArrQTool_pch */

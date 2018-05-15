@@ -48,7 +48,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    ShowScrollViewController *vc = [[ShowScrollViewController alloc]init];
+    showDanXuanVC *vc = [[showDanXuanVC alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     
     _window.rootViewController = navi;

@@ -35,7 +35,6 @@
 		7518D2731FF551F20008871F /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D2711FF551F10008871F /* UICountingLabel.m */; };
 		7518D2861FF553210008871F /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D2771FF553210008871F /* NSString+Category.m */; };
 		7518D2871FF553210008871F /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D2791FF553210008871F /* UIButton+Category.m */; };
-		7518D2881FF553210008871F /* UIColor+HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D27B1FF553210008871F /* UIColor+HexRGB.m */; };
 		7518D2891FF553210008871F /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D27D1FF553210008871F /* UITextField+Category.m */; };
 		7518D28A1FF553210008871F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D27F1FF553210008871F /* UIView+Extension.m */; };
 		7518D28B1FF553210008871F /* UIViewController+AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518D2811FF553210008871F /* UIViewController+AlertView.m */; };
@@ -258,8 +257,6 @@
 		7518D2771FF553210008871F /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		7518D2781FF553210008871F /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
 		7518D2791FF553210008871F /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
-		7518D27A1FF553210008871F /* UIColor+HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRGB.h"; sourceTree = "<group>"; };
-		7518D27B1FF553210008871F /* UIColor+HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRGB.m"; sourceTree = "<group>"; };
 		7518D27C1FF553210008871F /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
 		7518D27D1FF553210008871F /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
 		7518D27E1FF553210008871F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -751,8 +748,6 @@
 				7518D2771FF553210008871F /* NSString+Category.m */,
 				7518D2781FF553210008871F /* UIButton+Category.h */,
 				7518D2791FF553210008871F /* UIButton+Category.m */,
-				7518D27A1FF553210008871F /* UIColor+HexRGB.h */,
-				7518D27B1FF553210008871F /* UIColor+HexRGB.m */,
 				7518D27C1FF553210008871F /* UITextField+Category.h */,
 				7518D27D1FF553210008871F /* UITextField+Category.m */,
 				7518D27E1FF553210008871F /* UIView+Extension.h */,
@@ -761,6 +756,8 @@
 				7518D2811FF553210008871F /* UIViewController+AlertView.m */,
 				75630DEA1FE8AC2A008C4998 /* UILabel+LableExtentsion.h */,
 				75630DEB1FE8AC2A008C4998 /* UILabel+LableExtentsion.m */,
+				75701AAE1FDED7AC00374E9A /* UIColor+Extension.h */,
+				75701AAF1FDED7AC00374E9A /* UIColor+Extension.m */,
 				7518D2821FF553210008871F /* Voice.h */,
 				7518D2831FF553210008871F /* Voice.m */,
 				7518D2841FF553210008871F /* 把<null>替换为nil类别 */,
@@ -1617,8 +1614,6 @@
 				75701AA61FDED7AC00374E9A /* DemoTableViewController.h */,
 				75701AA71FDED7AC00374E9A /* DemoTableViewController.m */,
 				75701AA81FDED7AC00374E9A /* headerList.plist */,
-				75701AAE1FDED7AC00374E9A /* UIColor+Extension.h */,
-				75701AAF1FDED7AC00374E9A /* UIColor+Extension.m */,
 				75701AA91FDED7AC00374E9A /* Model */,
 				75701AB01FDED7AC00374E9A /* View */,
 				75701ABC1FDED7C600374E9A /* show.xcassets */,
@@ -2173,7 +2168,6 @@
 				75701B731FDEDD7500374E9A /* JLLineChartData.m in Sources */,
 				7532EA352025494000FD6AF2 /* MysizeAuto.m in Sources */,
 				75701B561FDEDC3700374E9A /* RootViewController.m in Sources */,
-				7518D2881FF553210008871F /* UIColor+HexRGB.m in Sources */,
 				754549F81FFB901500A5B3CD /* PXYview.m in Sources */,
 				7532DF1320AAC1160027B508 /* YYScrollTitleView.m in Sources */,
 				7532EA2C202546B400FD6AF2 /* YuLantankuangView.m in Sources */,

@@ -64,7 +64,7 @@
       
         [_tableView registerClass:[danxuanCell class] forCellReuseIdentifier:@"danxuanCell"];
         
-        [_tableView registerClass:[duoXuanCell class] forCellReuseIdentifier:@"danxuanCell"];
+        [_tableView registerClass:[duoXuanCell class] forCellReuseIdentifier:@"duoXuanCell"];
 
         
         
