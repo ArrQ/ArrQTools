@@ -67,6 +67,7 @@
 		751C5CB02041362D00B1D694 /* SelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5CAF2041362D00B1D694 /* SelectPhotoManager.m */; };
 		751C5CB32041364200B1D694 /* showxiangceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5CB22041364200B1D694 /* showxiangceViewController.m */; };
 		751C5CB5204136BB00B1D694 /* xiangce.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751C5CB4204136BB00B1D694 /* xiangce.xcassets */; };
+		7532DEE120AA68150027B508 /* YYTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEE020AA68150027B508 /* YYTimeManager.m */; };
 		7532E9F420245A2E00FD6AF2 /* showArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F320245A2E00FD6AF2 /* showArrayVC.m */; };
 		7532E9F82024720200FD6AF2 /* showYanZhengMaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F72024720200FD6AF2 /* showYanZhengMaVC.m */; };
 		7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9FD2025413800FD6AF2 /* showTangkuangVC.m */; };
@@ -304,6 +305,8 @@
 		751C5CB12041364200B1D694 /* showxiangceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showxiangceViewController.h; sourceTree = "<group>"; };
 		751C5CB22041364200B1D694 /* showxiangceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showxiangceViewController.m; sourceTree = "<group>"; };
 		751C5CB4204136BB00B1D694 /* xiangce.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = xiangce.xcassets; sourceTree = "<group>"; };
+		7532DEDF20AA68150027B508 /* YYTimeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTimeManager.h; sourceTree = "<group>"; };
+		7532DEE020AA68150027B508 /* YYTimeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTimeManager.m; sourceTree = "<group>"; };
 		7532E9F220245A2E00FD6AF2 /* showArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showArrayVC.h; sourceTree = "<group>"; };
 		7532E9F320245A2E00FD6AF2 /* showArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showArrayVC.m; sourceTree = "<group>"; };
 		7532E9F62024720200FD6AF2 /* showYanZhengMaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showYanZhengMaVC.h; sourceTree = "<group>"; };
@@ -1156,6 +1159,8 @@
 			children = (
 				754549C41FFB4A1B00A5B3CD /* showdaojishiViewController.h */,
 				754549C51FFB4A1B00A5B3CD /* showdaojishiViewController.m */,
+				7532DEDF20AA68150027B508 /* YYTimeManager.h */,
+				7532DEE020AA68150027B508 /* YYTimeManager.m */,
 			);
 			path = "倒计时";
 			sourceTree = "<group>";
@@ -2039,6 +2044,7 @@
 				75701B761FDEDD7500374E9A /* JLSingleLineChart.m in Sources */,
 				7532EA4A20254B2200FD6AF2 /* DuoXuanShuZuView.m in Sources */,
 				75F39FF8206A0EB800FA8290 /* LoginVC.m in Sources */,
+				7532DEE120AA68150027B508 /* YYTimeManager.m in Sources */,
 				75701B731FDEDD7500374E9A /* JLLineChartData.m in Sources */,
 				7532EA352025494000FD6AF2 /* MysizeAuto.m in Sources */,
 				75701B561FDEDC3700374E9A /* RootViewController.m in Sources */,

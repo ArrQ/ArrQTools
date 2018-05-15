@@ -44,7 +44,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    showMyKVOVC *vc = [[showMyKVOVC alloc]init];
+    showdaojishiViewController *vc = [[showdaojishiViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     
     _window.rootViewController = navi;

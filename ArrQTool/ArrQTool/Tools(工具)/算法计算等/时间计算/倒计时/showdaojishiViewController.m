@@ -7,7 +7,7 @@
 //
 
 #import "showdaojishiViewController.h"
-
+#import "YYTimeManager.h"
 @interface showdaojishiViewController (){
     
     dispatch_source_t _timer;// 计时器
@@ -37,9 +37,27 @@
     [self getTimeStart:timestr];// 方法 1
     
     
+
+    
+    
+    
+    
+    
+    
 }
 
 - (void)customUI{
+    
+    UILabel *lable_title = [[UILabel alloc]init];
+    
+    lable_title.text = @"娱乐";
+    lable_title.frame = CGRectMake(150, 100, 300, 20);
+    lable_title.font = [UIFont systemFontOfSize:14];
+    lable_title.textAlignment = NSTextAlignmentLeft;
+    lable_title.textColor = [UIColor colorWithWhite:0.3 alpha:1.0];
+    [self.view addSubview:lable_title];
+
+    [self getDataMinSec:10 andView:lable_title];
     
     UILabel *lable_2 = [[UILabel alloc]init];
     
@@ -51,7 +69,6 @@
     [self.view addSubview:lable_2];
     
     _fangFa2Label = lable_2;
-    
     
     
     
@@ -87,10 +104,21 @@
         self.minLabel.text = [NSString stringWithFormat:@"00:00"];
     }else
     {
-        //计算时分秒
+        //计算分秒
         long Min = spaTime/60;
         long Sec = spaTime%60;
         self.minLabel.text = [self changeShiFenMiao:Min and:Sec];
+        
+//        计算时分秒
+
+        NSInteger spaTimeNum = 120;
+        NSInteger hhNUm = spaTimeNum/3600;
+        long MinNum = (spaTimeNum%3600)/60;
+        long SecNum = spaTimeNum%60;
+
+        self.minLabel.text = [self getChangeShiFenMiaoWithHh:hhNUm andMin:MinNum andSec:SecNum];
+
+        
     }
     
     
@@ -100,7 +128,7 @@
 }
 
 
-
+// 返回分秒
 - (NSString *)changeShiFenMiao:(long)Min and:(long)Sec{
     NSString * M;
     NSString * S;
@@ -121,7 +149,44 @@
     return [NSString stringWithFormat:@"%@:%@",M,S];
 }
 
+// 返回 时分秒
 
+- (NSString *)getChangeShiFenMiaoWithHh:(long)hhNum andMin:(long)MinNum andSec:(long)SecNum{
+    
+   
+    NSString *allTime;
+
+    NSString *hh;
+    NSString * M;
+    NSString * S;
+    
+    if (hhNum<10)
+    {
+        hh = [NSString stringWithFormat:@"0%@",@(hhNum)];
+    }else
+    {
+        hh = [NSString stringWithFormat:@"%@",@(hhNum)];
+    }
+    if (MinNum<10)
+    {
+        M = [NSString stringWithFormat:@"0%ld",MinNum];
+    }else
+    {
+        M = [NSString stringWithFormat:@"%ld",MinNum];
+    }
+    if (SecNum<10)
+    {
+        S = [NSString stringWithFormat:@"0%ld",SecNum];
+    }else
+    {
+        S = [NSString stringWithFormat:@"%ld",SecNum];
+    }
+    allTime = [NSString stringWithFormat:@"%@'%@“%@",hh,M,S];
+   
+    return allTime;
+    
+    
+}
 
 - (void)getTimeStart:(NSString *)strTime{
     
@@ -261,6 +326,55 @@
 }
 
 
+
+# pragma mark --- 请求数据
+- (void)getDataMinSec:(NSInteger)sec andView:(UILabel *)titleLab{
+    
+    
+    
+   
+    [[YYTimeManager shareManager] getMoreTimeShowType:0 andSecond:10 andPlayingBlcok:^(NSString *hhStr, NSString *minStr, NSString *secStr) {
+        
+        titleLab.text = [NSString stringWithFormat:@"'%@' %@",minStr,secStr];
+
+        
+    } andFinishCompleted:^(NSInteger lastSecond) {
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+              [self getDataMinSec:sec andView:titleLab];
+            
+           });
+    }];
+    
+    
+    
+//    [[YYTimeManager shareManager] getMoreTimeMsWithSecond:10 andPlayingBlcok:^(NSString *minStr, NSString *secStr) {
+//
+//        titleLab.text = [NSString stringWithFormat:@"'%@' %@",minStr,secStr];
+//
+//
+//
+//    } andFinishCompleted:^(NSInteger lastSecond) {
+//
+//             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//
+//                                    [self getDataMinSec:sec andView:titleLab];
+//
+//
+//                });
+//
+//
+//    }];
+    
+  
+    
+ 
+    
+    
+    
+    
+}
 
 
 
