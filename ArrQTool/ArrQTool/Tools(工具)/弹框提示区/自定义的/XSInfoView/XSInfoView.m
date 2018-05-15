@@ -183,4 +183,49 @@
     return _infoImageView;
 }
 
+
+// 补充
+
++ (void)getShowInfoWithStyle:(XSInfoViewStyle *)style onView:(UIView *)superView andHeightToTop:(CGFloat)heightToTop{
+    XSInfoView *infoView = [[XSInfoView alloc] initWithStyle:style];
+    [infoView sizeToFit];
+    
+    [superView addSubview:infoView];
+    [superView bringSubviewToFront:infoView];
+    [infoView getAddCenterCons:heightToTop];
+    [XSInfoView countDown:style.durationSeconds dimissView:infoView];
+}
+
+
+- (void)getAddCenterCons:(CGFloat)heightToTop
+{
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.superview.mas_centerX);
+        make.centerY.equalTo(self.superview.mas_centerY).offset(heightToTop);
+        make.width.equalTo(@0).offset(self.W);
+        make.height.equalTo(@30);
+    }];
+    [self.infoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.mas_centerX);
+        make.centerY.equalTo(self.mas_centerY);
+        make.width.equalTo(@0).offset(self.W);
+        make.height.equalTo(@30);
+    }];
+    [self.infoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.infoImageView.mas_centerX);
+        make.centerY.equalTo(self.infoImageView.mas_centerY);
+        make.width.equalTo(@0).offset(self.W);
+        make.height.equalTo(@30);
+    }];
+}
+
+
+
+
+
+
+
+
+
+
 @end

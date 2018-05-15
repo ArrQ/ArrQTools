@@ -19,7 +19,7 @@
 #import <WebKit/WebKit.h>
 #import "DXPopover.h"
 #import <KVOController/KVOController.h>
-
+#import <FSCalendar/FSCalendar.h>
 //      *********    .h     *********
 
 #import "Header.h"
@@ -27,5 +27,8 @@
 #import "XSInfoView.h"
 #import "MoreCommonHeader.h"
 
+#import "NSString+Category.h"
+#import "UIColor+HexRGB.h"
+#import "UIView+Extension.h"
 
 #endif /* ArrQTool_pch */

@@ -68,6 +68,23 @@
 		751C5CB32041364200B1D694 /* showxiangceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C5CB22041364200B1D694 /* showxiangceViewController.m */; };
 		751C5CB5204136BB00B1D694 /* xiangce.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751C5CB4204136BB00B1D694 /* xiangce.xcassets */; };
 		7532DEE120AA68150027B508 /* YYTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEE020AA68150027B508 /* YYTimeManager.m */; };
+		7532DEE720AAB4620027B508 /* LoadEmptyImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7532DEE520AAB4620027B508 /* LoadEmptyImg.xcassets */; };
+		7532DEE820AAB4620027B508 /* LoadEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEE620AAB4620027B508 /* LoadEmptyView.m */; };
+		7532DEEC20AAB5100027B508 /* ImgGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEEB20AAB5100027B508 /* ImgGifView.m */; };
+		7532DEF120AAB6D90027B508 /* YYRefreshImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7532DEEE20AAB6D90027B508 /* YYRefreshImg.xcassets */; };
+		7532DEF220AAB6D90027B508 /* RefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEF020AAB6D90027B508 /* RefreshManager.m */; };
+		7532DEF520AAB7E80027B508 /* ShowImgGifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEF420AAB7E80027B508 /* ShowImgGifViewController.m */; };
+		7532DEFE20AABB5C0027B508 /* HisCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEF920AABB5C0027B508 /* HisCalendarView.m */; };
+		7532DEFF20AABB5C0027B508 /* ToolCalendarImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7532DEFB20AABB5C0027B508 /* ToolCalendarImg.xcassets */; };
+		7532DF0020AABB5C0027B508 /* ToolCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DEFC20AABB5C0027B508 /* ToolCalendarView.m */; };
+		7532DF0A20AABBD80027B508 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF0620AABBD80027B508 /* NSString+Category.m */; };
+		7532DF0B20AABBD80027B508 /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF0720AABBD80027B508 /* UITextField+Category.m */; };
+		7532DF0C20AABBD80027B508 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF0820AABBD80027B508 /* UIView+Extension.m */; };
+		7532DF0D20AABBD80027B508 /* UIColor+HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF0920AABBD80027B508 /* UIColor+HexRGB.m */; };
+		7532DF1020AABE2F0027B508 /* ShowDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF0F20AABE2F0027B508 /* ShowDateViewController.m */; };
+		7532DF1320AAC1160027B508 /* YYScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF1220AAC1160027B508 /* YYScrollTitleView.m */; };
+		7532DF1E20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF1D20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m */; };
+		7532DF2120AAC3E10027B508 /* ShowScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF2020AAC3E10027B508 /* ShowScrollViewController.m */; };
 		7532E9F420245A2E00FD6AF2 /* showArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F320245A2E00FD6AF2 /* showArrayVC.m */; };
 		7532E9F82024720200FD6AF2 /* showYanZhengMaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F72024720200FD6AF2 /* showYanZhengMaVC.m */; };
 		7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9FD2025413800FD6AF2 /* showTangkuangVC.m */; };
@@ -307,6 +324,37 @@
 		751C5CB4204136BB00B1D694 /* xiangce.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = xiangce.xcassets; sourceTree = "<group>"; };
 		7532DEDF20AA68150027B508 /* YYTimeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTimeManager.h; sourceTree = "<group>"; };
 		7532DEE020AA68150027B508 /* YYTimeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTimeManager.m; sourceTree = "<group>"; };
+		7532DEE420AAB4620027B508 /* LoadEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadEmptyView.h; sourceTree = "<group>"; };
+		7532DEE520AAB4620027B508 /* LoadEmptyImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoadEmptyImg.xcassets; sourceTree = "<group>"; };
+		7532DEE620AAB4620027B508 /* LoadEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadEmptyView.m; sourceTree = "<group>"; };
+		7532DEEA20AAB5100027B508 /* ImgGifView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgGifView.h; sourceTree = "<group>"; };
+		7532DEEB20AAB5100027B508 /* ImgGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgGifView.m; sourceTree = "<group>"; };
+		7532DEEE20AAB6D90027B508 /* YYRefreshImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YYRefreshImg.xcassets; sourceTree = "<group>"; };
+		7532DEEF20AAB6D90027B508 /* RefreshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshManager.h; sourceTree = "<group>"; };
+		7532DEF020AAB6D90027B508 /* RefreshManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshManager.m; sourceTree = "<group>"; };
+		7532DEF320AAB7E80027B508 /* ShowImgGifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowImgGifViewController.h; sourceTree = "<group>"; };
+		7532DEF420AAB7E80027B508 /* ShowImgGifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImgGifViewController.m; sourceTree = "<group>"; };
+		7532DEF920AABB5C0027B508 /* HisCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HisCalendarView.m; sourceTree = "<group>"; };
+		7532DEFA20AABB5C0027B508 /* ToolCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolCalendarView.h; sourceTree = "<group>"; };
+		7532DEFB20AABB5C0027B508 /* ToolCalendarImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ToolCalendarImg.xcassets; sourceTree = "<group>"; };
+		7532DEFC20AABB5C0027B508 /* ToolCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolCalendarView.m; sourceTree = "<group>"; };
+		7532DEFD20AABB5C0027B508 /* HisCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HisCalendarView.h; sourceTree = "<group>"; };
+		7532DF0220AABBD80027B508 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		7532DF0320AABBD80027B508 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		7532DF0420AABBD80027B508 /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
+		7532DF0520AABBD80027B508 /* UIColor+HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRGB.h"; sourceTree = "<group>"; };
+		7532DF0620AABBD80027B508 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		7532DF0720AABBD80027B508 /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
+		7532DF0820AABBD80027B508 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		7532DF0920AABBD80027B508 /* UIColor+HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRGB.m"; sourceTree = "<group>"; };
+		7532DF0E20AABE2F0027B508 /* ShowDateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDateViewController.h; sourceTree = "<group>"; };
+		7532DF0F20AABE2F0027B508 /* ShowDateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDateViewController.m; sourceTree = "<group>"; };
+		7532DF1120AAC1160027B508 /* YYScrollTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYScrollTitleView.h; sourceTree = "<group>"; };
+		7532DF1220AAC1160027B508 /* YYScrollTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYScrollTitleView.m; sourceTree = "<group>"; };
+		7532DF1C20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSccrollTitleCollectionViewCell.h; sourceTree = "<group>"; };
+		7532DF1D20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSccrollTitleCollectionViewCell.m; sourceTree = "<group>"; };
+		7532DF1F20AAC3E10027B508 /* ShowScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowScrollViewController.h; sourceTree = "<group>"; };
+		7532DF2020AAC3E10027B508 /* ShowScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowScrollViewController.m; sourceTree = "<group>"; };
 		7532E9F220245A2E00FD6AF2 /* showArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showArrayVC.h; sourceTree = "<group>"; };
 		7532E9F320245A2E00FD6AF2 /* showArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showArrayVC.m; sourceTree = "<group>"; };
 		7532E9F62024720200FD6AF2 /* showYanZhengMaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showYanZhengMaVC.h; sourceTree = "<group>"; };
@@ -929,6 +977,103 @@
 			path = "相册选择种类1";
 			sourceTree = "<group>";
 		};
+		7532DEE220AAB4230027B508 /* 加载动画以及空视图 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEE920AAB5100027B508 /* 加载动画 */,
+				7532DEE320AAB4620027B508 /* 空视图 */,
+			);
+			path = "加载动画以及空视图";
+			sourceTree = "<group>";
+		};
+		7532DEE320AAB4620027B508 /* 空视图 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEE420AAB4620027B508 /* LoadEmptyView.h */,
+				7532DEE620AAB4620027B508 /* LoadEmptyView.m */,
+				7532DEE520AAB4620027B508 /* LoadEmptyImg.xcassets */,
+			);
+			path = "空视图";
+			sourceTree = "<group>";
+		};
+		7532DEE920AAB5100027B508 /* 加载动画 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEF320AAB7E80027B508 /* ShowImgGifViewController.h */,
+				7532DEF420AAB7E80027B508 /* ShowImgGifViewController.m */,
+				7532DEF620AAB93D0027B508 /* 加载gif */,
+				7532DEED20AAB6D90027B508 /* 上拉刷新动画 */,
+			);
+			path = "加载动画";
+			sourceTree = "<group>";
+		};
+		7532DEED20AAB6D90027B508 /* 上拉刷新动画 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEEF20AAB6D90027B508 /* RefreshManager.h */,
+				7532DEF020AAB6D90027B508 /* RefreshManager.m */,
+			);
+			path = "上拉刷新动画";
+			sourceTree = "<group>";
+		};
+		7532DEF620AAB93D0027B508 /* 加载gif */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEEE20AAB6D90027B508 /* YYRefreshImg.xcassets */,
+				7532DEEA20AAB5100027B508 /* ImgGifView.h */,
+				7532DEEB20AAB5100027B508 /* ImgGifView.m */,
+			);
+			path = "加载gif";
+			sourceTree = "<group>";
+		};
+		7532DEF720AABB190027B508 /* 日历view */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEF820AABB5C0027B508 /* 日历 */,
+				7532DF0E20AABE2F0027B508 /* ShowDateViewController.h */,
+				7532DF0F20AABE2F0027B508 /* ShowDateViewController.m */,
+			);
+			path = "日历view";
+			sourceTree = "<group>";
+		};
+		7532DEF820AABB5C0027B508 /* 日历 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DEFD20AABB5C0027B508 /* HisCalendarView.h */,
+				7532DEF920AABB5C0027B508 /* HisCalendarView.m */,
+				7532DEFA20AABB5C0027B508 /* ToolCalendarView.h */,
+				7532DEFC20AABB5C0027B508 /* ToolCalendarView.m */,
+				7532DEFB20AABB5C0027B508 /* ToolCalendarImg.xcassets */,
+			);
+			path = "日历";
+			sourceTree = "<group>";
+		};
+		7532DF0120AABBD80027B508 /* CategoryBase */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF0220AABBD80027B508 /* NSString+Category.h */,
+				7532DF0620AABBD80027B508 /* NSString+Category.m */,
+				7532DF0320AABBD80027B508 /* UIView+Extension.h */,
+				7532DF0820AABBD80027B508 /* UIView+Extension.m */,
+				7532DF0420AABBD80027B508 /* UITextField+Category.h */,
+				7532DF0720AABBD80027B508 /* UITextField+Category.m */,
+				7532DF0520AABBD80027B508 /* UIColor+HexRGB.h */,
+				7532DF0920AABBD80027B508 /* UIColor+HexRGB.m */,
+			);
+			path = CategoryBase;
+			sourceTree = "<group>";
+		};
+		7532DF1420AAC1C40027B508 /* 自定义scrollviewTitle */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF1120AAC1160027B508 /* YYScrollTitleView.h */,
+				7532DF1220AAC1160027B508 /* YYScrollTitleView.m */,
+				7532DF1C20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.h */,
+				7532DF1D20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m */,
+			);
+			path = "自定义scrollviewTitle";
+			sourceTree = "<group>";
+		};
 		7532E9EE202459EA00FD6AF2 /* 数组字符串 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1228,6 +1373,7 @@
 		75630DE91FE8ABBB008C4998 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				7532DF0120AABBD80027B508 /* CategoryBase */,
 				75630DEA1FE8AC2A008C4998 /* UILabel+LableExtentsion.h */,
 				75630DEB1FE8AC2A008C4998 /* UILabel+LableExtentsion.m */,
 				75630DED1FE8AD07008C4998 /* LableViewController.h */,
@@ -1293,6 +1439,7 @@
 				75701A2F1FDECAB700374E9A /* Tools(工具) */,
 				75701A011FDEC81C00374E9A /* Main.storyboard */,
 				75701A041FDEC81C00374E9A /* Assets.xcassets */,
+				75701A381FDECCFC00374E9A /* cell区 */,
 				75701A061FDEC81C00374E9A /* LaunchScreen.storyboard */,
 				75701A091FDEC81C00374E9A /* Info.plist */,
 				75701A0A1FDEC81C00374E9A /* main.m */,
@@ -1324,6 +1471,8 @@
 		75701A2F1FDECAB700374E9A /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				7532DEF720AABB190027B508 /* 日历view */,
+				7532DEE220AAB4230027B508 /* 加载动画以及空视图 */,
 				75BE13C42091707F000AB938 /* 版本更新 */,
 				751B460B207D9B9A002F087C /* 头文件的运用 */,
 				751B4607207CB20F002F087C /* 监听工具 */,
@@ -1344,7 +1493,6 @@
 				75701A7A1FDED4BA00374E9A /* 滚动条title */,
 				75701A641FDED21600374E9A /* 监听+通知 */,
 				75701A581FDED07B00374E9A /* 富文本 */,
-				75701A381FDECCFC00374E9A /* cell区 */,
 				75701A301FDECAB700374E9A /* 无线轮播器 */,
 			);
 			path = "Tools(工具)";
@@ -1465,6 +1613,9 @@
 		75701A7A1FDED4BA00374E9A /* 滚动条title */ = {
 			isa = PBXGroup;
 			children = (
+				7532DF1F20AAC3E10027B508 /* ShowScrollViewController.h */,
+				7532DF2020AAC3E10027B508 /* ShowScrollViewController.m */,
+				7532DF1420AAC1C40027B508 /* 自定义scrollviewTitle */,
 				75701A881FDED4D500374E9A /* showdemo */,
 				75701A7B1FDED4BA00374E9A /* CathecticModel.h */,
 				75701A7C1FDED4BA00374E9A /* CathecticModel.m */,
@@ -1842,11 +1993,13 @@
 				7518D2611FF550780008871F /* cqssc_yxgz.html in Resources */,
 				75701A8D1FDED59400374E9A /* show.xcassets in Resources */,
 				75701A2E1FDECA6E00374E9A /* 无线轮播图片资源.xcassets in Resources */,
+				7532DEF120AAB6D90027B508 /* YYRefreshImg.xcassets in Resources */,
 				75701A571FDECEDA00374E9A /* 选中图标.xcassets in Resources */,
 				75F39FFB206A111F00FA8290 /* LoginAndRegister.xcassets in Resources */,
 				7518D2671FF550780008871F /* xyft_yxgz.html in Resources */,
 				75701B7B1FDEDDC700374E9A /* tubiao.xcassets in Resources */,
 				7518D25F1FF550780008871F /* bjpk_yxgz.html in Resources */,
+				7532DEFF20AABB5C0027B508 /* ToolCalendarImg.xcassets in Resources */,
 				7518D2641FF550780008871F /* jsks_yxgz.html in Resources */,
 				751C5C5E203FA4D900B1D694 /* dropIcon.xcassets in Resources */,
 				75A3A8F5200A0B5E00493A34 /* ShangPinData.db in Resources */,
@@ -1862,6 +2015,7 @@
 				7514A23F204CE4D100490ED2 /* nimei.html in Resources */,
 				7518D2681FF550780008871F /* xync_yxgz.html in Resources */,
 				75701A031FDEC81C00374E9A /* Main.storyboard in Resources */,
+				7532DEE720AAB4620027B508 /* LoadEmptyImg.xcassets in Resources */,
 				7518D2661FF550780008871F /* xjssc_yxgz.html in Resources */,
 				7518D2621FF550780008871F /* gdklsf_yxgz.html in Resources */,
 			);
@@ -1944,15 +2098,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7532DEE820AAB4620027B508 /* LoadEmptyView.m in Sources */,
 				7506B9271FDF949D00DCD6D2 /* allview.m in Sources */,
 				75F39FE2206A0E2400FA8290 /* CommonYanZhengMaFieldTextView.m in Sources */,
 				7532EA2A202546B400FD6AF2 /* YuLanModel.m in Sources */,
 				754549C61FFB4A1B00A5B3CD /* showdaojishiViewController.m in Sources */,
 				75701A371FDECAFD00374E9A /* wuxialunboViewController.m in Sources */,
 				751B5EA7203E8CF8000F31FE /* showUpDownVC.m in Sources */,
+				7532DF2120AAC3E10027B508 /* ShowScrollViewController.m in Sources */,
 				7532EA20202546B400FD6AF2 /* WuXingSelectListModel.m in Sources */,
 				751C5CB32041364200B1D694 /* showxiangceViewController.m in Sources */,
 				75701A001FDEC81C00374E9A /* ViewController.m in Sources */,
+				7532DF1E20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m in Sources */,
 				75701ABA1FDED7AC00374E9A /* DDTableViewHeader.m in Sources */,
 				751C5C952040FD0600B1D694 /* showxigbieOneViewController.m in Sources */,
 				7532EA5420254C0600FD6AF2 /* duoXuanCell.m in Sources */,
@@ -1971,8 +2128,11 @@
 				7506B9281FDF949D00DCD6D2 /* showxuanzhuangViewController.m in Sources */,
 				75701A0B1FDEC81C00374E9A /* main.m in Sources */,
 				751B4612207DA4D3002F087C /* showMoreCommonVC.m in Sources */,
+				7532DF0C20AABBD80027B508 /* UIView+Extension.m in Sources */,
 				7518D29C1FF55B220008871F /* DVYAxisView.m in Sources */,
 				75701A841FDED4BB00374E9A /* CathecticModel.m in Sources */,
+				7532DEF520AAB7E80027B508 /* ShowImgGifViewController.m in Sources */,
+				7532DF0A20AABBD80027B508 /* NSString+Category.m in Sources */,
 				75701AB91FDED7AC00374E9A /* UIColor+Extension.m in Sources */,
 				7532EA4920254B2200FD6AF2 /* DuoXuanModel.m in Sources */,
 				7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */,
@@ -2009,6 +2169,7 @@
 				75701AB81FDED7AC00374E9A /* DDSectionModel.m in Sources */,
 				75BE13CE20917282000AB938 /* CheckVersionManager.m in Sources */,
 				754549C21FFB312B00A5B3CD /* shunzibaozhiduiziVC.m in Sources */,
+				7532DF0B20AABBD80027B508 /* UITextField+Category.m in Sources */,
 				75F39FF9206A0EB800FA8290 /* LoginView.m in Sources */,
 				751C5CA12041149900B1D694 /* AddressPickerView.m in Sources */,
 				75701A771FDED32200374E9A /* jiantingViewController.m in Sources */,
@@ -2016,10 +2177,12 @@
 				7532EA4720254B2200FD6AF2 /* DanxuanModel.m in Sources */,
 				751C5C9A204113EB00B1D694 /* showchengshixuanzeViewController.m in Sources */,
 				751C5C922040FCED00B1D694 /* YLActionSheet.m in Sources */,
+				7532DF1020AABE2F0027B508 /* ShowDateViewController.m in Sources */,
 				7532EA26202546B400FD6AF2 /* BottomZuoHaoView.m in Sources */,
 				75701A5D1FDED07B00374E9A /* ManageColorAttributed.m in Sources */,
 				7532EA4620254B2200FD6AF2 /* DanxuanCollectionViewCell.m in Sources */,
 				75701AB51FDED7AC00374E9A /* DemoTableViewController.m in Sources */,
+				7532DEF220AAB6D90027B508 /* RefreshManager.m in Sources */,
 				75F39FEE206A0EA700FA8290 /* RegisterVC.m in Sources */,
 				75A3A8F3200A057100493A34 /* showFMDBViewController.m in Sources */,
 				751B5EAA203EA421000F31FE /* dopDownVC.m in Sources */,
@@ -2038,6 +2201,7 @@
 				7514A234204CDB9B00490ED2 /* showJSONHTMLvc.m in Sources */,
 				7518D2891FF553210008871F /* UITextField+Category.m in Sources */,
 				754549CE1FFB8EF500A5B3CD /* showzhixian1ViewController.m in Sources */,
+				7532DF0020AABB5C0027B508 /* ToolCalendarView.m in Sources */,
 				7518D2721FF551F20008871F /* PTHistogramView.m in Sources */,
 				75F39FE1206A0E2400FA8290 /* CommonFieldTextView.m in Sources */,
 				7514A231204CDB7800490ED2 /* XMLReader.m in Sources */,
@@ -2050,6 +2214,7 @@
 				75701B561FDEDC3700374E9A /* RootViewController.m in Sources */,
 				7518D2881FF553210008871F /* UIColor+HexRGB.m in Sources */,
 				754549F81FFB901500A5B3CD /* PXYview.m in Sources */,
+				7532DF1320AAC1160027B508 /* YYScrollTitleView.m in Sources */,
 				7532EA2C202546B400FD6AF2 /* YuLantankuangView.m in Sources */,
 				7532EA23202546B400FD6AF2 /* PKCellSectionTitle.m in Sources */,
 				75701B721FDEDD7500374E9A /* JLLineChart.m in Sources */,
@@ -2059,6 +2224,7 @@
 				7518D2871FF553210008871F /* UIButton+Category.m in Sources */,
 				751B460A207CB23B002F087C /* showMyKVOVC.m in Sources */,
 				75701B751FDEDD7500374E9A /* JLPieChartData.m in Sources */,
+				7532DF0D20AABBD80027B508 /* UIColor+HexRGB.m in Sources */,
 				75630DF41FE8DD41008C4998 /* bullViewController.m in Sources */,
 				7532EA29202546B400FD6AF2 /* PKZuoHaoTableViewCell.m in Sources */,
 				7518D28D1FF553210008871F /* NullSafe.m in Sources */,
@@ -2073,12 +2239,14 @@
 				7518D22C1FF33D7F0008871F /* WYWebProgressLayer.m in Sources */,
 				75701A611FDED10D00374E9A /* zitiViewController.m in Sources */,
 				75701B6F1FDEDD7500374E9A /* JLBubble.m in Sources */,
+				7532DEEC20AAB5100027B508 /* ImgGifView.m in Sources */,
 				7532EA28202546B400FD6AF2 /* PKBottomZuoHaoView.m in Sources */,
 				7518D2281FF33C690008871F /* XTimer.m in Sources */,
 				754549F41FFB901500A5B3CD /* PXChartBackgroundView.m in Sources */,
 				75701B551FDEDC3700374E9A /* DKSWebViewController.m in Sources */,
 				75701B6E1FDEDD7500374E9A /* JLBaseChart.m in Sources */,
 				754549F51FFB901500A5B3CD /* PXLineChartConst.m in Sources */,
+				7532DEFE20AABB5C0027B508 /* HisCalendarView.m in Sources */,
 				7532EA25202546B400FD6AF2 /* PKshuomingView.m in Sources */,
 				7506B9261FDF949D00DCD6D2 /* allTableViewCell.m in Sources */,
 			);

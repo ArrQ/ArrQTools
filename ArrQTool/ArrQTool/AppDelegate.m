@@ -31,6 +31,10 @@
 
 #import "showMyKVOVC.h"//监听 kvo
 
+#import "ShowDateViewController.h"
+
+#import "ShowScrollViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -44,7 +48,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    showdaojishiViewController *vc = [[showdaojishiViewController alloc]init];
+    ShowScrollViewController *vc = [[ShowScrollViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     
     _window.rootViewController = navi;

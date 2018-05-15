@@ -44,4 +44,8 @@ typedef NS_ENUM(NSInteger, XSInfoViewLayoutStyle) {
 - (void)showView:(NSString *)info onView:(UIViewController *)superView;
 - (void)showDismiss;
 - (void)addCenterCons;
+// 补充
+
++ (void)getShowInfoWithStyle:(XSInfoViewStyle *)style onView:(UIView *)superView andHeightToTop:(CGFloat)heightToTop;
+
 @end
