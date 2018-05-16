@@ -31,9 +31,11 @@
 
 #import "showMyKVOVC.h"//监听 kvo
 
-#import "ShowDateViewController.h"
+#import "ShowDateViewController.h"// 日历
 
-#import "ShowScrollViewController.h"
+#import "ShowScrollViewController.h"// 滚动标题
+
+#import "showSearchViewController.h"// 搜索样式
 
 
 @interface AppDelegate ()
@@ -48,7 +50,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    showDanXuanVC *vc = [[showDanXuanVC alloc]init];
+    showSearchViewController *vc = [[showSearchViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     
     _window.rootViewController = navi;
