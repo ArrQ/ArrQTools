@@ -7,10 +7,12 @@
 //
 
 #import "DanxuanCollectionViewCell.h"
+
 @interface DanxuanCollectionViewCell ()
 
 @property(nonatomic,strong) UILabel *titleLab;
 
+@property(nonatomic,strong) UIImageView *imgBgView;
 
 
 
@@ -18,30 +20,29 @@
 
 @implementation DanxuanCollectionViewCell
 
-+ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView andModel:(DanxuanModel *)model index:(NSIndexPath *)indexPath{
+- (void)cellWithdata:(DanxuanModel *)model index:(NSIndexPath *)indexPath{
     
-    DanxuanCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.titleLab.text = model.title;
+    self.titleLab.text = model.title;
     
-    [cell checkSelected:model.isSearchState];
-    
-    return cell;
-    
+    [self checkSelected:model.isSearchState];
     
     
 }
+
+
+
 
 - (void)checkSelected:(NSString *)isSelected{
     
     if ([isSelected integerValue] == 1) {
         
-        self.backgroundColor = [UIColor redColor];
-        self.titleLab.textColor = [UIColor redColor];
+        self.imgBgView.backgroundColor = [UIColor redColor];
+        self.titleLab.textColor = [UIColor whiteColor];
         
     }else{
         
-        self.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+        self.imgBgView.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
         self.titleLab.textColor = [UIColor orangeColor];
         
         
@@ -56,13 +57,7 @@
     
     if (self = [super initWithFrame:frame]) {
         
-        CGFloat w = (SCREEN_WIDTH - 10*11)/11;
-        
-        self.layer.masksToBounds = YES;
-        self.layer.cornerRadius = w/2;
-        self.layer.borderWidth = 0.5;
-        self.layer.borderColor = [UIColor colorWithWhite:0.9 alpha:1.0].CGColor;
-        
+
         [self customSubViews];
         
     }
@@ -76,8 +71,25 @@
 
 - (void)customSubViews{
     
+  
+    
+    UIImageView *imgView_bg = [[UIImageView alloc]init];
+    
+//    [imgView_bg setImage:[UIImage imageNamed:@"user_icon_default"]];
+    imgView_bg.contentMode = UIViewContentModeScaleToFill;
+    
+    imgView_bg.backgroundColor = [UIColor orangeColor];
+    
+    imgView_bg.layer.masksToBounds = YES;
+    
+    imgView_bg.layer.cornerRadius = (self.frame.size.width-10)/2;
+    
+    [self addSubview:imgView_bg];
+
+    _imgBgView = imgView_bg;
+    
     UILabel *lable_title = [[UILabel alloc]init];
-    lable_title.text = @"重庆时时彩";
+    lable_title.text = @"1";
     lable_title.font = [UIFont systemFontOfSize:14];
     lable_title.textAlignment = NSTextAlignmentCenter;
     lable_title.textColor = [UIColor colorWithWhite:0.7 alpha:1.0];
@@ -87,14 +99,29 @@
     _titleLab = lable_title;
     
     
+    
 }
+
+
+
 
 
 - (void)layoutSubviews{
     [super layoutSubviews];
     
-    [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
+    [_imgBgView mas_makeConstraints:^(MASConstraintMaker *make) {
         
+
+        make.size.mas_equalTo(CGSizeMake(self.frame.size.width-10, self.frame.size.width-10));
+
+        make.centerX.centerY.equalTo(self);
+
+        
+        
+    }];
+    
+    
+    [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.centerX.centerY.equalTo(self);
         

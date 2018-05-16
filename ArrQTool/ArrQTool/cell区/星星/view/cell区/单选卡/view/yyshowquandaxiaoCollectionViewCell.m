@@ -1,32 +1,38 @@
 //
-//  DuoXuanCollectionViewCell.m
-//  ZuoHaoManager
+//  yyshowquandaxiaoCollectionViewCell.m
+//  ArrQTool
 //
-//  Created by ArrQ on 2018/1/12.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "DuoXuanCollectionViewCell.h"
+#import "yyshowquandaxiaoCollectionViewCell.h"
 
-
-@interface DuoXuanCollectionViewCell ()
+@interface yyshowquandaxiaoCollectionViewCell ()
 
 @property(nonatomic,strong) UILabel *titleLab;
 
 @property(nonatomic,strong) UIImageView *imgBgView;
 
+
 @end
 
 
-@implementation DuoXuanCollectionViewCell
+@implementation yyshowquandaxiaoCollectionViewCell
 
-- (void)cellWithdata:(DuoXuanModel *)model index:(NSIndexPath *)indexPath{
+
+- (void)cellWithdata:(BaseXingXingModel *)model index:(NSIndexPath *)indexPath{
+    
+    
     
     self.titleLab.text = model.title;
     
     [self checkSelected:model.isSearchState];
     
+    
 }
+
+
 
 
 - (void)checkSelected:(NSString *)isSelected{
@@ -53,8 +59,7 @@
     
     if (self = [super initWithFrame:frame]) {
         
-
-       
+        
         [self customSubViews];
         
     }
@@ -69,6 +74,7 @@
 - (void)customSubViews{
     
     
+    
     UIImageView *imgView_bg = [[UIImageView alloc]init];
     
     //    [imgView_bg setImage:[UIImage imageNamed:@"user_icon_default"]];
@@ -77,14 +83,12 @@
     imgView_bg.backgroundColor = [UIColor orangeColor];
     
     imgView_bg.layer.masksToBounds = YES;
-    
-    imgView_bg.layer.cornerRadius = (self.frame.size.width-10)/2;
+
+    imgView_bg.layer.cornerRadius = 5;
     
     [self addSubview:imgView_bg];
     
     _imgBgView = imgView_bg;
-    
-    
     
     UILabel *lable_title = [[UILabel alloc]init];
     lable_title.text = @"1";
@@ -97,20 +101,25 @@
     _titleLab = lable_title;
     
     
+    
 }
 
 
+
+
+
 - (void)layoutSubviews{
-    
     [super layoutSubviews];
-    
     
     [_imgBgView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.size.mas_equalTo(CGSizeMake(self.frame.size.width-10, self.frame.size.width-10));
-        
+
+        make.size.mas_equalTo(CGSizeMake(self.frame.size.width*2/3, self.frame.size.height*2/3));
+
         make.centerX.centerY.equalTo(self);
-       
+        
+
+        
     }];
     
     
@@ -124,6 +133,8 @@
     
     
 }
+
+
 
 
 

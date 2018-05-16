@@ -1,28 +1,28 @@
 //
-//  duoXuanCell.m
+//  showduoxuanTableViewCell.m
 //  ArrQTool
 //
-//  Created by ArrQ on 2018/2/3.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "duoXuanCell.h"
+#import "showduoxuanTableViewCell.h"
 
 
-#import "DuoXuanShuZuView.h"
+#import "showduoxuanView.h"
 
-@interface duoXuanCell ()
+@interface showduoxuanTableViewCell ()
 
-@property(nonatomic,strong) DuoXuanShuZuView *haomaview;
+@property(nonatomic,strong) showduoxuanView *haomaview;
 
 @end
 
 
-@implementation duoXuanCell
+@implementation showduoxuanTableViewCell
 
 - (void)cellWithData:(NSDictionary *)dic andIndexPath:(NSIndexPath *)indexPath andXuanHaoMoShi:(NSArray *)xuanhaomoshi andBlock:(void (^)(NSArray *))result{
     
-   
+    
     [self.haomaview showView:xuanhaomoshi andIndexPath:indexPath block:^(NSArray *dataArray) {
         
         result(dataArray);
@@ -52,9 +52,9 @@
     
     
     
-    _haomaview = [[DuoXuanShuZuView alloc]initWithFrame:CGRectMake(60, 0, SCREEN_WIDTH-60, self.frame.size.height)];
-
-
+    _haomaview = [[showduoxuanView alloc]initWithFrame:CGRectMake(60, 0, SCREEN_WIDTH-60, self.frame.size.height)];
+    
+    
     [self addSubview:_haomaview];
     
 }

@@ -1,32 +1,38 @@
 //
-//  DuoXuanCollectionViewCell.m
-//  ZuoHaoManager
+//  yyxingxingCollectionViewCell.m
+//  ArrQTool
 //
-//  Created by ArrQ on 2018/1/12.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "DuoXuanCollectionViewCell.h"
+#import "yyxingxingCollectionViewCell.h"
 
-
-@interface DuoXuanCollectionViewCell ()
+@interface yyxingxingCollectionViewCell ()
 
 @property(nonatomic,strong) UILabel *titleLab;
 
 @property(nonatomic,strong) UIImageView *imgBgView;
 
+
 @end
 
 
-@implementation DuoXuanCollectionViewCell
+@implementation yyxingxingCollectionViewCell
 
-- (void)cellWithdata:(DuoXuanModel *)model index:(NSIndexPath *)indexPath{
+
+- (void)cellWithdata:(BaseXingXingModel *)model index:(NSIndexPath *)indexPath{
+    
+    
     
     self.titleLab.text = model.title;
     
     [self checkSelected:model.isSearchState];
     
+    
 }
+
+
 
 
 - (void)checkSelected:(NSString *)isSelected{
@@ -53,8 +59,7 @@
     
     if (self = [super initWithFrame:frame]) {
         
-
-       
+        
         [self customSubViews];
         
     }
@@ -67,6 +72,7 @@
 
 
 - (void)customSubViews{
+    
     
     
     UIImageView *imgView_bg = [[UIImageView alloc]init];
@@ -84,8 +90,6 @@
     
     _imgBgView = imgView_bg;
     
-    
-    
     UILabel *lable_title = [[UILabel alloc]init];
     lable_title.text = @"1";
     lable_title.font = [UIFont systemFontOfSize:14];
@@ -97,20 +101,25 @@
     _titleLab = lable_title;
     
     
+    
 }
 
 
+
+
+
 - (void)layoutSubviews{
-    
     [super layoutSubviews];
     
-    
     [_imgBgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
         
         make.size.mas_equalTo(CGSizeMake(self.frame.size.width-10, self.frame.size.width-10));
         
         make.centerX.centerY.equalTo(self);
-       
+        
+        
+        
     }];
     
     
@@ -124,6 +133,8 @@
     
     
 }
+
+
 
 
 

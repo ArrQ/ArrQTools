@@ -11,7 +11,8 @@
 
 @interface DuoXuanCollectionViewCell : UICollectionViewCell
 
-+ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView andModel:(DuoXuanModel *)model index:(NSIndexPath *)indexPath;
+
+- (void)cellWithdata:(DuoXuanModel *)model index:(NSIndexPath *)indexPath;
 
 
 @end

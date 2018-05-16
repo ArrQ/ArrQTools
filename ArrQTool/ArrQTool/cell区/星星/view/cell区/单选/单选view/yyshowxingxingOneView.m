@@ -1,14 +1,16 @@
 //
-//  DanXuanCellView.m
-//  ZuoHaoManager
+//  yyshowxingxingOneView.m
+//  ArrQTool
 //
-//  Created by ArrQ on 2018/1/12.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "DanXuanCellView.h"
-#import "DanxuanCollectionViewCell.h"
-@interface DanXuanCellView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+#import "yyshowxingxingOneView.h"
+
+#import "yyxingxingCollectionViewCell.h"
+
+@interface yyshowxingxingOneView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
 @property(nonatomic,strong) NSMutableArray *dataArray;
@@ -19,7 +21,7 @@
 
 @end
 
-@implementation DanXuanCellView
+@implementation yyshowxingxingOneView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     
@@ -93,20 +95,20 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         layout.minimumInteritemSpacing = 0;
         layout.minimumLineSpacing = 0;
-//        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        //        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) collectionViewLayout:layout];
-
+        
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.bounces = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
-        [_collectionView registerClass:[DanxuanCollectionViewCell class] forCellWithReuseIdentifier:@"DanxuanCollectionViewCell"];
+        [_collectionView registerClass:[yyxingxingCollectionViewCell class] forCellWithReuseIdentifier:@"yyxingxingCollectionViewCell"];
         
-      
+        
         
     }
     
@@ -133,19 +135,19 @@
 {
     
     return CGSizeMake(_collectionView.frame.size.width/(self.dataArray.count+1), _collectionView.frame.size.width/(self.dataArray.count+1));
-
+    
 }
 
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
     return 1;
-
+    
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 1;
-
+    
     
 }
 
@@ -154,15 +156,15 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-
-    DanxuanCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DanxuanCollectionViewCell" forIndexPath:indexPath];
+    
+    yyxingxingCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"yyxingxingCollectionViewCell" forIndexPath:indexPath];
     
     [cell cellWithdata:self.dataArray[indexPath.row] index:indexPath];
     
     
     return cell;
     
-
+    
     
 }
 
@@ -174,7 +176,7 @@
     NSMutableArray *data = [NSMutableArray array];
     for (int i = 0; i<self.dataArray.count; i++) {
         
-        DanxuanModel *model = self.dataArray[i];
+        BaseXingXingModel *model = self.dataArray[i];
         if (indexPath.row == i) {
             
             model = self.dataArray[indexPath.row];

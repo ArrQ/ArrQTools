@@ -1,14 +1,18 @@
 //
-//  DanXuanCellView.m
-//  ZuoHaoManager
+//  showduoxuanView.m
+//  ArrQTool
 //
-//  Created by ArrQ on 2018/1/12.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "DanXuanCellView.h"
-#import "DanxuanCollectionViewCell.h"
-@interface DanXuanCellView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+#import "showduoxuanView.h"
+
+
+#import "showduoxuanCollectionViewCell.h"
+#import "BaseXingXingModel.h"
+
+@interface showduoxuanView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
 @property(nonatomic,strong) NSMutableArray *dataArray;
@@ -17,9 +21,15 @@
 
 @property(nonatomic,strong) NSMutableArray *dataSelected;
 
+
+
 @end
 
-@implementation DanXuanCellView
+
+@implementation showduoxuanView
+
+
+
 
 - (instancetype)initWithFrame:(CGRect)frame{
     
@@ -62,6 +72,7 @@
 - (NSMutableArray *)dataArray{
     
     if (!_dataArray) {
+        
         _dataArray = [NSMutableArray array];
         
     }
@@ -70,10 +81,9 @@
 }
 
 
-
 # pragma mark --- view  显示 隐藏 ---
 
-- (void)showView:(NSArray *)dataArray block:(void (^)(NSArray *))block{
+- (void)showView:(NSArray *)dataArray andIndexPath:(NSIndexPath *)indexPath block:(void (^)(NSArray *))block{
     
     self.block = block;
     [self.dataArray removeAllObjects];
@@ -83,7 +93,11 @@
     
     
     
+    
 }
+
+
+
 
 # pragma mark --- UICollectionView
 - (UICollectionView *)collectionView{
@@ -91,22 +105,18 @@
     if (!_collectionView) {
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-        layout.minimumInteritemSpacing = 0;
-        layout.minimumLineSpacing = 0;
-//        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) collectionViewLayout:layout];
-
+        
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.bounces = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
-        [_collectionView registerClass:[DanxuanCollectionViewCell class] forCellWithReuseIdentifier:@"DanxuanCollectionViewCell"];
-        
-      
+        [_collectionView registerClass:[showduoxuanCollectionViewCell class] forCellWithReuseIdentifier:@"showduoxuanCollectionViewCell"];
         
     }
     
@@ -133,19 +143,19 @@
 {
     
     return CGSizeMake(_collectionView.frame.size.width/(self.dataArray.count+1), _collectionView.frame.size.width/(self.dataArray.count+1));
-
+    
 }
 
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
     return 1;
-
+    
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
     return 1;
-
+    
     
 }
 
@@ -154,15 +164,18 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-
-    DanxuanCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DanxuanCollectionViewCell" forIndexPath:indexPath];
+    
+    showduoxuanCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"showduoxuanCollectionViewCell" forIndexPath:indexPath];
+    
     
     [cell cellWithdata:self.dataArray[indexPath.row] index:indexPath];
     
     
     return cell;
     
-
+    
+    
+    
     
 }
 
@@ -170,11 +183,12 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    [self.dataSelected removeAllObjects];
+    
+    
     NSMutableArray *data = [NSMutableArray array];
     for (int i = 0; i<self.dataArray.count; i++) {
         
-        DanxuanModel *model = self.dataArray[i];
+        BaseXingXingModel *model = self.dataArray[i];
         if (indexPath.row == i) {
             
             model = self.dataArray[indexPath.row];
@@ -197,9 +211,6 @@
             
         }else{
             
-            model.isSearchState = @"0";
-            
-            
             [data addObject:model];
             
             
@@ -211,6 +222,7 @@
     
     [self.dataArray removeAllObjects];
     [self.dataArray addObjectsFromArray:data];
+    
     [self.collectionView reloadData];
     
     if (self.block) {
@@ -219,6 +231,7 @@
         
         
     }
+    
     
 }
 

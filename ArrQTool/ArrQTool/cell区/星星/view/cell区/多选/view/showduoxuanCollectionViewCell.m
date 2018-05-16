@@ -1,15 +1,16 @@
 //
-//  DuoXuanCollectionViewCell.m
-//  ZuoHaoManager
+//  showduoxuanCollectionViewCell.m
+//  ArrQTool
 //
-//  Created by ArrQ on 2018/1/12.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "DuoXuanCollectionViewCell.h"
+#import "showduoxuanCollectionViewCell.h"
 
 
-@interface DuoXuanCollectionViewCell ()
+
+@interface showduoxuanCollectionViewCell ()
 
 @property(nonatomic,strong) UILabel *titleLab;
 
@@ -18,9 +19,9 @@
 @end
 
 
-@implementation DuoXuanCollectionViewCell
+@implementation showduoxuanCollectionViewCell
 
-- (void)cellWithdata:(DuoXuanModel *)model index:(NSIndexPath *)indexPath{
+- (void)cellWithdata:(BaseXingXingModel *)model index:(NSIndexPath *)indexPath{
     
     self.titleLab.text = model.title;
     
@@ -53,8 +54,8 @@
     
     if (self = [super initWithFrame:frame]) {
         
-
-       
+        
+        
         [self customSubViews];
         
     }
@@ -106,12 +107,15 @@
     
     
     [_imgBgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
+
         make.size.mas_equalTo(CGSizeMake(self.frame.size.width-10, self.frame.size.width-10));
-        
+
         make.centerX.centerY.equalTo(self);
-       
+
+        
     }];
+    
+
     
     
     [_titleLab mas_makeConstraints:^(MASConstraintMaker *make) {

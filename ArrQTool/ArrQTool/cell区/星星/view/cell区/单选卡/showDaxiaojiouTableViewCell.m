@@ -1,22 +1,24 @@
 //
-//  danxuanCell.m
+//  showDaxiaojiouTableViewCell.m
 //  ArrQTool
 //
-//  Created by ArrQ on 2018/2/3.
+//  Created by ArrQ on 2018/5/16.
 //  Copyright © 2018年 ArrQ. All rights reserved.
 //
 
-#import "danxuanCell.h"
-#import "DanXuanCellView.h"
+#import "showDaxiaojiouTableViewCell.h"
 
-@interface danxuanCell ()
+#import "yyshowquandaxiaoView.h"
 
-@property(nonatomic,strong) DanXuanCellView *haomaview;
+
+@interface showDaxiaojiouTableViewCell ()
+
+@property(nonatomic,strong) yyshowquandaxiaoView *haomaview;
 
 @end
 
 
-@implementation danxuanCell
+@implementation showDaxiaojiouTableViewCell
 
 
 - (void)cellWithData:(NSDictionary *)dic andXuanHaoMoShi:(NSArray *)xuanhaomoshi andBlock:(void (^)(NSArray *))result{
@@ -51,10 +53,9 @@
 
 - (void)customSubViews{
     
-    
-    
-    _haomaview = [[DanXuanCellView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
 
+    _haomaview = [[yyshowquandaxiaoView alloc]initWithFrame:CGRectMake(60, 0, SCREEN_WIDTH-60, 40)];
+    
     
     [self addSubview:_haomaview];
     
@@ -65,7 +66,7 @@
     
     [super layoutSubviews];
     
-   
+    
     
 }
 

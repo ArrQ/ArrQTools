@@ -80,6 +80,18 @@
 		7532DF1320AAC1160027B508 /* YYScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF1220AAC1160027B508 /* YYScrollTitleView.m */; };
 		7532DF1E20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF1D20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m */; };
 		7532DF2120AAC3E10027B508 /* ShowScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF2020AAC3E10027B508 /* ShowScrollViewController.m */; };
+		7532DF3920ABE0DC0027B508 /* YYShowXingXingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF3820ABE0DC0027B508 /* YYShowXingXingVC.m */; };
+		7532DF3E20ABE1630027B508 /* xingxingSectionTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF3D20ABE1630027B508 /* xingxingSectionTitleView.m */; };
+		7532DF4220AC041B0027B508 /* yyshowxingxingOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF4120AC041B0027B508 /* yyshowxingxingOneTableViewCell.m */; };
+		7532DF4820AC04710027B508 /* BaseXingXingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF4720AC04710027B508 /* BaseXingXingModel.m */; };
+		7532DF4B20AC04DD0027B508 /* yyshowxingxingOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF4A20AC04DD0027B508 /* yyshowxingxingOneView.m */; };
+		7532DF5120AC05420027B508 /* yyxingxingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF5020AC05420027B508 /* yyxingxingCollectionViewCell.m */; };
+		7532DF5520AC077C0027B508 /* showduoxuanCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF5420AC077C0027B508 /* showduoxuanCollectionViewCell.m */; };
+		7532DF5820AC07950027B508 /* showduoxuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF5720AC07950027B508 /* showduoxuanTableViewCell.m */; };
+		7532DF5C20AC07BC0027B508 /* showduoxuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF5B20AC07BC0027B508 /* showduoxuanView.m */; };
+		7532DF6020AC1D5C0027B508 /* yyshowquandaxiaoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF5F20AC1D5C0027B508 /* yyshowquandaxiaoView.m */; };
+		7532DF6320AC1D7B0027B508 /* showDaxiaojiouTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF6220AC1D7B0027B508 /* showDaxiaojiouTableViewCell.m */; };
+		7532DF6720AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF6620AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.m */; };
 		7532E9F420245A2E00FD6AF2 /* showArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F320245A2E00FD6AF2 /* showArrayVC.m */; };
 		7532E9F82024720200FD6AF2 /* showYanZhengMaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F72024720200FD6AF2 /* showYanZhengMaVC.m */; };
 		7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9FD2025413800FD6AF2 /* showTangkuangVC.m */; };
@@ -340,6 +352,30 @@
 		7532DF1D20AAC23C0027B508 /* YYSccrollTitleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYSccrollTitleCollectionViewCell.m; sourceTree = "<group>"; };
 		7532DF1F20AAC3E10027B508 /* ShowScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowScrollViewController.h; sourceTree = "<group>"; };
 		7532DF2020AAC3E10027B508 /* ShowScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowScrollViewController.m; sourceTree = "<group>"; };
+		7532DF3720ABE0DC0027B508 /* YYShowXingXingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYShowXingXingVC.h; sourceTree = "<group>"; };
+		7532DF3820ABE0DC0027B508 /* YYShowXingXingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYShowXingXingVC.m; sourceTree = "<group>"; };
+		7532DF3C20ABE1630027B508 /* xingxingSectionTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xingxingSectionTitleView.h; sourceTree = "<group>"; };
+		7532DF3D20ABE1630027B508 /* xingxingSectionTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xingxingSectionTitleView.m; sourceTree = "<group>"; };
+		7532DF4020AC041B0027B508 /* yyshowxingxingOneTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yyshowxingxingOneTableViewCell.h; sourceTree = "<group>"; };
+		7532DF4120AC041B0027B508 /* yyshowxingxingOneTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yyshowxingxingOneTableViewCell.m; sourceTree = "<group>"; };
+		7532DF4620AC04710027B508 /* BaseXingXingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseXingXingModel.h; sourceTree = "<group>"; };
+		7532DF4720AC04710027B508 /* BaseXingXingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseXingXingModel.m; sourceTree = "<group>"; };
+		7532DF4920AC04DD0027B508 /* yyshowxingxingOneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yyshowxingxingOneView.h; sourceTree = "<group>"; };
+		7532DF4A20AC04DD0027B508 /* yyshowxingxingOneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yyshowxingxingOneView.m; sourceTree = "<group>"; };
+		7532DF4F20AC05420027B508 /* yyxingxingCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yyxingxingCollectionViewCell.h; sourceTree = "<group>"; };
+		7532DF5020AC05420027B508 /* yyxingxingCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yyxingxingCollectionViewCell.m; sourceTree = "<group>"; };
+		7532DF5320AC077C0027B508 /* showduoxuanCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showduoxuanCollectionViewCell.h; sourceTree = "<group>"; };
+		7532DF5420AC077C0027B508 /* showduoxuanCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showduoxuanCollectionViewCell.m; sourceTree = "<group>"; };
+		7532DF5620AC07950027B508 /* showduoxuanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showduoxuanTableViewCell.h; sourceTree = "<group>"; };
+		7532DF5720AC07950027B508 /* showduoxuanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showduoxuanTableViewCell.m; sourceTree = "<group>"; };
+		7532DF5A20AC07BC0027B508 /* showduoxuanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showduoxuanView.h; sourceTree = "<group>"; };
+		7532DF5B20AC07BC0027B508 /* showduoxuanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showduoxuanView.m; sourceTree = "<group>"; };
+		7532DF5E20AC1D5C0027B508 /* yyshowquandaxiaoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yyshowquandaxiaoView.h; sourceTree = "<group>"; };
+		7532DF5F20AC1D5C0027B508 /* yyshowquandaxiaoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yyshowquandaxiaoView.m; sourceTree = "<group>"; };
+		7532DF6120AC1D7B0027B508 /* showDaxiaojiouTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showDaxiaojiouTableViewCell.h; sourceTree = "<group>"; };
+		7532DF6220AC1D7B0027B508 /* showDaxiaojiouTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showDaxiaojiouTableViewCell.m; sourceTree = "<group>"; };
+		7532DF6520AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yyshowquandaxiaoCollectionViewCell.h; sourceTree = "<group>"; };
+		7532DF6620AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yyshowquandaxiaoCollectionViewCell.m; sourceTree = "<group>"; };
 		7532E9F220245A2E00FD6AF2 /* showArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showArrayVC.h; sourceTree = "<group>"; };
 		7532E9F320245A2E00FD6AF2 /* showArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showArrayVC.m; sourceTree = "<group>"; };
 		7532E9F62024720200FD6AF2 /* showYanZhengMaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showYanZhengMaVC.h; sourceTree = "<group>"; };
@@ -1038,6 +1074,117 @@
 			path = "自定义scrollviewTitle";
 			sourceTree = "<group>";
 		};
+		7532DF3620ABE09E0027B508 /* 星星 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF3720ABE0DC0027B508 /* YYShowXingXingVC.h */,
+				7532DF3820ABE0DC0027B508 /* YYShowXingXingVC.m */,
+				7532DF4520AC04520027B508 /* model */,
+				7532DF3A20ABE1130027B508 /* view */,
+			);
+			path = "星星";
+			sourceTree = "<group>";
+		};
+		7532DF3A20ABE1130027B508 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF3F20AC03850027B508 /* cell区 */,
+				7532DF3B20ABE1220027B508 /* HeaderTitleView */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7532DF3B20ABE1220027B508 /* HeaderTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF3C20ABE1630027B508 /* xingxingSectionTitleView.h */,
+				7532DF3D20ABE1630027B508 /* xingxingSectionTitleView.m */,
+			);
+			path = HeaderTitleView;
+			sourceTree = "<group>";
+		};
+		7532DF3F20AC03850027B508 /* cell区 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF5D20AC1AA20027B508 /* 单选卡 */,
+				7532DF5220AC07600027B508 /* 多选 */,
+				7532DF4320AC04220027B508 /* 单选 */,
+			);
+			path = "cell区";
+			sourceTree = "<group>";
+		};
+		7532DF4320AC04220027B508 /* 单选 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF4020AC041B0027B508 /* yyshowxingxingOneTableViewCell.h */,
+				7532DF4120AC041B0027B508 /* yyshowxingxingOneTableViewCell.m */,
+				7532DF4420AC04380027B508 /* 单选view */,
+			);
+			path = "单选";
+			sourceTree = "<group>";
+		};
+		7532DF4420AC04380027B508 /* 单选view */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF4920AC04DD0027B508 /* yyshowxingxingOneView.h */,
+				7532DF4A20AC04DD0027B508 /* yyshowxingxingOneView.m */,
+				7532DF4F20AC05420027B508 /* yyxingxingCollectionViewCell.h */,
+				7532DF5020AC05420027B508 /* yyxingxingCollectionViewCell.m */,
+			);
+			path = "单选view";
+			sourceTree = "<group>";
+		};
+		7532DF4520AC04520027B508 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF4620AC04710027B508 /* BaseXingXingModel.h */,
+				7532DF4720AC04710027B508 /* BaseXingXingModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7532DF5220AC07600027B508 /* 多选 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF5920AC079B0027B508 /* view */,
+				7532DF5620AC07950027B508 /* showduoxuanTableViewCell.h */,
+				7532DF5720AC07950027B508 /* showduoxuanTableViewCell.m */,
+			);
+			path = "多选";
+			sourceTree = "<group>";
+		};
+		7532DF5920AC079B0027B508 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF5A20AC07BC0027B508 /* showduoxuanView.h */,
+				7532DF5B20AC07BC0027B508 /* showduoxuanView.m */,
+				7532DF5320AC077C0027B508 /* showduoxuanCollectionViewCell.h */,
+				7532DF5420AC077C0027B508 /* showduoxuanCollectionViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7532DF5D20AC1AA20027B508 /* 单选卡 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF6120AC1D7B0027B508 /* showDaxiaojiouTableViewCell.h */,
+				7532DF6220AC1D7B0027B508 /* showDaxiaojiouTableViewCell.m */,
+				7532DF6420AC1D840027B508 /* view */,
+			);
+			path = "单选卡";
+			sourceTree = "<group>";
+		};
+		7532DF6420AC1D840027B508 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF5E20AC1D5C0027B508 /* yyshowquandaxiaoView.h */,
+				7532DF5F20AC1D5C0027B508 /* yyshowquandaxiaoView.m */,
+				7532DF6520AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.h */,
+				7532DF6620AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		7532E9EE202459EA00FD6AF2 /* 数组字符串 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1481,6 +1628,7 @@
 		75701A381FDECCFC00374E9A /* cell区 */ = {
 			isa = PBXGroup;
 			children = (
+				7532DF3620ABE09E0027B508 /* 星星 */,
 				7532EA3620254AB800FD6AF2 /* 单选+多选 */,
 				75701AA51FDED7AC00374E9A /* showdemo好友 */,
 				75701A391FDECD0A00374E9A /* 展开 */,
@@ -2063,6 +2211,7 @@
 				7532EA2A202546B400FD6AF2 /* YuLanModel.m in Sources */,
 				754549C61FFB4A1B00A5B3CD /* showdaojishiViewController.m in Sources */,
 				75701A371FDECAFD00374E9A /* wuxialunboViewController.m in Sources */,
+				7532DF6720AC1EE30027B508 /* yyshowquandaxiaoCollectionViewCell.m in Sources */,
 				751B5EA7203E8CF8000F31FE /* showUpDownVC.m in Sources */,
 				7532DF2120AAC3E10027B508 /* ShowScrollViewController.m in Sources */,
 				7532EA20202546B400FD6AF2 /* WuXingSelectListModel.m in Sources */,
@@ -2095,7 +2244,9 @@
 				7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */,
 				7518D29F1FF55B450008871F /* showzhexian2ViewController.m in Sources */,
 				7518D2321FF341210008871F /* BaseViewController.m in Sources */,
+				7532DF5120AC05420027B508 /* yyxingxingCollectionViewCell.m in Sources */,
 				75630C20206C87CA007251B3 /* showOneCollectionViewCell.m in Sources */,
+				7532DF5520AC077C0027B508 /* showduoxuanCollectionViewCell.m in Sources */,
 				7518D28B1FF553210008871F /* UIViewController+AlertView.m in Sources */,
 				754549F71FFB901500A5B3CD /* PXXview.m in Sources */,
 				7518D2861FF553210008871F /* NSString+Category.m in Sources */,
@@ -2113,10 +2264,12 @@
 				7532EA21202546B400FD6AF2 /* WuXingSelectListTableViewCell.m in Sources */,
 				757019FD1FDEC81C00374E9A /* AppDelegate.m in Sources */,
 				751C5CA720411A0100B1D694 /* UICustomDatePicker.m in Sources */,
+				7532DF6320AC1D7B0027B508 /* showDaxiaojiouTableViewCell.m in Sources */,
 				7532EA27202546B400FD6AF2 /* ZuoHaoTableViewCell.m in Sources */,
 				7532EA4520254B2200FD6AF2 /* DanXuanCellView.m in Sources */,
 				7518D29B1FF55B220008871F /* DVXAxisView.m in Sources */,
 				7518D29A1FF55B220008871F /* DVPlot.m in Sources */,
+				7532DF3920ABE0DC0027B508 /* YYShowXingXingVC.m in Sources */,
 				75701AB71FDED7AC00374E9A /* DDCellModel.m in Sources */,
 				75701A501FDECE4300374E9A /* SelModel.m in Sources */,
 				75701A8B1FDED4F800374E9A /* showViewController.m in Sources */,
@@ -2136,6 +2289,8 @@
 				7532DF1020AABE2F0027B508 /* ShowDateViewController.m in Sources */,
 				7532EA26202546B400FD6AF2 /* BottomZuoHaoView.m in Sources */,
 				75701A5D1FDED07B00374E9A /* ManageColorAttributed.m in Sources */,
+				7532DF4220AC041B0027B508 /* yyshowxingxingOneTableViewCell.m in Sources */,
+				7532DF5C20AC07BC0027B508 /* showduoxuanView.m in Sources */,
 				7532EA4620254B2200FD6AF2 /* DanxuanCollectionViewCell.m in Sources */,
 				75701AB51FDED7AC00374E9A /* DemoTableViewController.m in Sources */,
 				7532DEF220AAB6D90027B508 /* RefreshManager.m in Sources */,
@@ -2150,6 +2305,7 @@
 				7532EA4D20254B8600FD6AF2 /* showDanXuanVC.m in Sources */,
 				75701A871FDED4BB00374E9A /* TitleScrollView.m in Sources */,
 				75701A511FDECE4300374E9A /* subSelModel.m in Sources */,
+				7532DF6020AC1D5C0027B508 /* yyshowquandaxiaoView.m in Sources */,
 				754549F31FFB901500A5B3CD /* PointItem.m in Sources */,
 				7532EA4820254B2200FD6AF2 /* DuoXuanCollectionViewCell.m in Sources */,
 				754549F61FFB901500A5B3CD /* PXLineChartView.m in Sources */,
@@ -2182,6 +2338,7 @@
 				75630DF41FE8DD41008C4998 /* bullViewController.m in Sources */,
 				7532EA29202546B400FD6AF2 /* PKZuoHaoTableViewCell.m in Sources */,
 				7518D28D1FF553210008871F /* NullSafe.m in Sources */,
+				7532DF5820AC07950027B508 /* showduoxuanTableViewCell.m in Sources */,
 				75701A861FDED4BB00374E9A /* UIView+SGExtension.m in Sources */,
 				7532EA5120254BEE00FD6AF2 /* danxuanCell.m in Sources */,
 				7532EA24202546B400FD6AF2 /* PKshuomingCell.m in Sources */,
@@ -2191,9 +2348,12 @@
 				75701A551FDECE5B00374E9A /* cellzhankaiViewController.m in Sources */,
 				75701B741FDEDD7500374E9A /* JLPieChart.m in Sources */,
 				7518D22C1FF33D7F0008871F /* WYWebProgressLayer.m in Sources */,
+				7532DF3E20ABE1630027B508 /* xingxingSectionTitleView.m in Sources */,
 				75701A611FDED10D00374E9A /* zitiViewController.m in Sources */,
 				75701B6F1FDEDD7500374E9A /* JLBubble.m in Sources */,
 				7532DEEC20AAB5100027B508 /* ImgGifView.m in Sources */,
+				7532DF4820AC04710027B508 /* BaseXingXingModel.m in Sources */,
+				7532DF4B20AC04DD0027B508 /* yyshowxingxingOneView.m in Sources */,
 				7532EA28202546B400FD6AF2 /* PKBottomZuoHaoView.m in Sources */,
 				7518D2281FF33C690008871F /* XTimer.m in Sources */,
 				754549F41FFB901500A5B3CD /* PXChartBackgroundView.m in Sources */,

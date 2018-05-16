@@ -12,7 +12,7 @@
 
 @interface DanxuanCollectionViewCell : UICollectionViewCell
 
-+ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView andModel:(DanxuanModel *)model index:(NSIndexPath *)indexPath;
 
+- (void)cellWithdata:(DanxuanModel *)model index:(NSIndexPath *)indexPath;
 
 @end

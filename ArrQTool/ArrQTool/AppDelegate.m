@@ -36,6 +36,9 @@
 #import "ShowScrollViewController.h"
 
 
+#import "YYShowXingXingVC.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -48,7 +51,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    showDanXuanVC *vc = [[showDanXuanVC alloc]init];
+    YYShowXingXingVC *vc = [[YYShowXingXingVC alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     
     _window.rootViewController = navi;

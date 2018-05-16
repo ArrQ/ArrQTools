@@ -10,9 +10,9 @@
 #import "danxuanCell.h"
 #import "DanxuanModel.h"
 
-
-
 #import "duoXuanCell.h"
+
+
 
 @interface showDanXuanVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,6 +35,7 @@
     
     return _dataOneModelArray;
 }
+
 
 
 - (void)viewDidLoad {
@@ -88,6 +89,14 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    
+    if(indexPath.section == 1){
+        
+        return 40;
+
+        
+    }
+    
     return 40;
     
 }
@@ -113,23 +122,34 @@
         
         return homeCell_000;
         
+    }if (indexPath.section == 1) {
+        
+        
+        
+            duoXuanCell *homeCell_000 = [tableView dequeueReusableCellWithIdentifier:@"duoXuanCell"];
+            homeCell_000.selectionStyle = UITableViewCellSelectionStyleNone;
+            
+            NSLog(@"%@",self.dataOneModelArray);
+            
+            [homeCell_000 cellWithData:nil andIndexPath:indexPath andXuanHaoMoShi:self.dataOneModelArray[indexPath.row] andBlock:^(NSArray *dataArray) {
+                
+                NSLog(@"====== %@",dataArray);
+                
+                
+            }];
+        
+            return homeCell_000;
+            
+            
+       
+        
+       
+        
     }
     
-    duoXuanCell *homeCell_000 = [tableView dequeueReusableCellWithIdentifier:@"duoXuanCell"];
-    homeCell_000.selectionStyle = UITableViewCellSelectionStyleNone;
-   
-    NSLog(@"%@",self.dataOneModelArray);
+  
     
-    
-    
-    [homeCell_000 cellWithData:nil andXuanHaoMoShi:self.dataOneModelArray[indexPath.row] andBlock:^(NSArray *dataArray) {
-        
-        NSLog(@"====== %@",dataArray);
-        
-        
-    }];
-    
-    return homeCell_000;
+    return nil;
     
     
 }
@@ -155,27 +175,34 @@
     
     
     NSMutableArray *cellOneModelArray = [NSMutableArray array];
-    
+    NSMutableArray *cellTwoModelArray = [NSMutableArray array];
+
     
         for (int i =0; i<datatitle.count; i++) {
             
             NSDictionary *dicone = datatitle[i];
             
             DanxuanModel *baimodel = [[DanxuanModel alloc]initWithDictionary:dicone error:nil];
+    
             [cellOneModelArray addObject:baimodel];
           
+            DanxuanModel *baimodelTwo = [[DanxuanModel alloc]initWithDictionary:dicone error:nil];
+            
+            [cellTwoModelArray addObject:baimodelTwo];
+            
+            
+            
         }
         
         [self.dataOneModelArray removeAllObjects];
     
-//        [self.dataOneModelArray addObjectsFromArray:cellOneModelArray];
-    
-        [self.dataOneModelArray addObject:cellOneModelArray];
         [self.dataOneModelArray addObject:cellOneModelArray];
 
+        [self.dataOneModelArray addObject:cellTwoModelArray];
+
+    
         
-        
-      [self.tableView reloadData];
+        [self.tableView reloadData];
     
     
 }
