@@ -12,7 +12,14 @@
 #define isIOS(a) [[[UIDevice currentDevice]systemVersion] floatValue] == a
 #define aboveIOS(a) [[[UIDevice currentDevice]systemVersion] floatValue] >= a
 #import "UIImage+Category.h"
-@interface showSearchViewController ()<UISearchBarDelegate>
+
+
+#import "showSearchMoreViewController.h"
+
+#import "UISearchBar+FMAdd.h"
+
+
+@interface showSearchViewController ()<UISearchBarDelegate,UITextFieldDelegate>
 
 // 搜索UISearchBar
 @property(nonatomic,strong)UISearchBar *firstSearchBar;
@@ -48,7 +55,50 @@
     // 如何设置搜索图标
     [self setUpFifthSearchBar];
     
+    
+    
+    [self customUI];
+    
+    
+    
 }
+
+
+# pragma mark --- 获取 UI
+
+- (void)customUI{
+    
+    
+    UIButton *button_btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    button_btn.frame = CGRectMake(SCREEN_WIDTH/2, SCREEN_HEIGHT-200, 44, 44);
+    [button_btn setTitle:@"加入" forState:UIControlStateNormal];
+    button_btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    button_btn.layer.masksToBounds = YES;
+    button_btn.layer.cornerRadius = 5;
+    
+    button_btn.layer.borderWidth = 1.f;
+    button_btn.layer.borderColor = [[UIColor colorWithWhite:0.7 alpha:1.0]CGColor];
+    [button_btn setTitleColor:[UIColor colorWithWhite:0.5 alpha:1.0] forState:UIControlStateNormal];
+    button_btn.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:button_btn];
+    
+    [button_btn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    
+}
+
+- (void)clickBtn:(UIButton *)sender{
+    
+    showSearchMoreViewController *showVC = [[showSearchMoreViewController alloc]init];
+
+    [self.navigationController pushViewController:showVC animated:YES];
+    
+    
+    
+}
+
 
 // 通过画色来修改UISearchBar的背景色
 - (void)setUpFistSearchBar {
@@ -60,6 +110,30 @@
     self.firstSearchBar.delegate = self;
     self.firstSearchBar.placeholder = @"请输入搜索的内容";
     [self.view addSubview:self.firstSearchBar];
+    
+    
+    UITextField *searchField = [self.firstSearchBar valueForKey:@"searchField"];
+
+   
+    UIButton *buttonyuyin = [UIButton buttonWithType:UIButtonTypeCustom];
+  
+    [buttonyuyin setImage:[UIImage imageNamed:@"Voice_button_icon"] forState:UIControlStateNormal];
+
+    [searchField addSubview:buttonyuyin];
+    
+    [buttonyuyin mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.size.mas_equalTo(CGSizeMake(30, 30));
+        make.right.equalTo(searchField.mas_right).offset(-15);
+        make.centerY.equalTo(searchField.mas_centerY);
+        
+    }];
+    
+    
+    
+
+    
+    
 }
 
 // 通过添加背景图片来修改UISearchBar的背景色
@@ -71,6 +145,29 @@
     self.secondSearchBar.placeholder = @"请输入搜索的内容";
     self.secondSearchBar.backgroundImage = [UIImage imageNamed:@"nav_bar_ios7"];
     [self.view addSubview:self.secondSearchBar];
+    
+    
+    UITextField *searchField = [self.secondSearchBar valueForKey:@"searchField"];
+    
+    if (searchField) {
+        
+        [searchField setBackgroundColor:[UIColor whiteColor]];
+        searchField.layer.cornerRadius = 14.0f;
+        searchField.layer.borderColor = [UIColor colorWithRed:247/255.0 green:75/255.0 blue:31/255.0 alpha:1].CGColor;
+        searchField.layer.borderWidth = 1;
+        searchField.layer.masksToBounds = YES;
+    }
+    
+    
+    if (@available(iOS 11.0, *)) {
+        
+        [self.secondSearchBar setPositionAdjustment:UIOffsetMake(searchField.frame.size.width/4, 0) forSearchBarIcon:UISearchBarIconSearch];
+        
+    }
+    
+    
+    
+  
     
 }
 
@@ -106,8 +203,13 @@
     self.forthSearchBar.backgroundImage = [[UIImage alloc] init];
     self.forthSearchBar.delegate = self;
     self.forthSearchBar.placeholder = @"请输入搜索的内容";
-    [self fm_setCancelButtonTitle:@"取消"];
+    [self getCancelButtonTitle:@"取消" andFont:[UIFont systemFontOfSize:14]];
+
+    
     self.forthSearchBar.tintColor = [UIColor colorWithRed:86/255.0 green:179/255.0 blue:11/255.0 alpha:1];
+    
+    
+    
     [self.view addSubview:self.forthSearchBar];
     
     
@@ -116,25 +218,43 @@
     if (searchField) {
         //修正光标颜色
         [searchField setTintColor:[UIColor redColor]];
-        
         [searchField setBackgroundColor:[UIColor whiteColor]];
+        
+        searchField.layer.masksToBounds = YES;
         searchField.layer.cornerRadius = 14.0f;
         searchField.layer.borderColor = [UIColor colorWithRed:247/255.0 green:75/255.0 blue:31/255.0 alpha:1].CGColor;
         searchField.layer.borderWidth = 1;
-        searchField.layer.masksToBounds = YES;
+        
+        
     }
+    
+    
+    
+    
+    
     
 }
 
-//其中fm_setCancelButtonTitle是我写的UISearchBar一个分类的方法
-- (void)fm_setCancelButtonTitle:(NSString *)title {
+
+# pragma mark --- 设置 searchBar 取消 标题
+- (void)getCancelButtonTitle:(NSString *)title andFont:(UIFont *)font{
     
-    if (isIOS(9)) {
+    NSDictionary *textAttr = @{NSFontAttributeName : font};
+   
+    if (@available(iOS 9.0, *)) {
+    
         [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitle:title];
-    }else {
+        [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]] setTitleTextAttributes:textAttr forState:UIControlStateNormal];
+
+    }else{
         
         [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitle:title];
+        [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitleTextAttributes:textAttr forState:UIControlStateNormal];
+
     }
+
+    
+   
 }
 
 
@@ -146,9 +266,11 @@
     self.fifthSearchBar.backgroundImage = [[UIImage alloc] init];
     self.fifthSearchBar.delegate = self;
     self.fifthSearchBar.placeholder = @"请输入搜索的内容";
+    
     [self.fifthSearchBar setImage:[UIImage imageNamed:@"share"]
                  forSearchBarIcon:UISearchBarIconSearch
                             state:UIControlStateNormal];
+    
     [self.view addSubview:self.fifthSearchBar];
     
     
@@ -161,7 +283,12 @@
         searchField.layer.borderColor = [UIColor colorWithRed:247/255.0 green:75/255.0 blue:31/255.0 alpha:1].CGColor;
         searchField.layer.borderWidth = 1;
         searchField.layer.masksToBounds = YES;
+        
     }
+    
+    
+    
+    
     
 }
 
@@ -174,6 +301,7 @@
     if (self.forthSearchBar == searchBar) {
         
         searchBar.showsCancelButton = YES;
+        
     }
     
 }
@@ -185,7 +313,7 @@
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     
-    NSLog(@"textDidChange");
+        NSLog(@"textDidChange");
     
 }
 
@@ -217,5 +345,26 @@
     [self.fifthSearchBar resignFirstResponder];
     
 }
+
+// 结束编辑的时候设置为居中
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    
+    
+    // 继续传递代理方法
+    if ([self.secondSearchBar.delegate respondsToSelector:@selector(searchBarShouldBeginEditing:)]) {
+        [self.secondSearchBar.delegate searchBarShouldBeginEditing:self.secondSearchBar];
+    }
+    
+    
+    if (@available(iOS 11.0, *)) {
+        [self.secondSearchBar setPositionAdjustment:UIOffsetMake(textField.frame.size.width/4, 0) forSearchBarIcon:UISearchBarIconSearch];
+    }
+    
+    return YES;
+}
+
+
+
+
 
 @end
