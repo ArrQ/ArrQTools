@@ -88,6 +88,7 @@
 		7532DF7920AD0CDE0027B508 /* showMoreSearchImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7532DF7820AD0CDE0027B508 /* showMoreSearchImg.xcassets */; };
 		7532DF8020AD35EE0027B508 /* YYSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF7F20AD35EE0027B508 /* YYSearchBarView.m */; };
 		7532DF8420AD56870027B508 /* YYCustomSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF8320AD56870027B508 /* YYCustomSearchView.m */; };
+		7532DF8820AE62D90027B508 /* showMasnoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF8720AE62D90027B508 /* showMasnoryViewController.m */; };
 		7532E9F420245A2E00FD6AF2 /* showArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F320245A2E00FD6AF2 /* showArrayVC.m */; };
 		7532E9F82024720200FD6AF2 /* showYanZhengMaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F72024720200FD6AF2 /* showYanZhengMaVC.m */; };
 		7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9FD2025413800FD6AF2 /* showTangkuangVC.m */; };
@@ -362,6 +363,8 @@
 		7532DF7F20AD35EE0027B508 /* YYSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSearchBarView.m; sourceTree = "<group>"; };
 		7532DF8220AD56870027B508 /* YYCustomSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCustomSearchView.h; sourceTree = "<group>"; };
 		7532DF8320AD56870027B508 /* YYCustomSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCustomSearchView.m; sourceTree = "<group>"; };
+		7532DF8620AE62D90027B508 /* showMasnoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showMasnoryViewController.h; sourceTree = "<group>"; };
+		7532DF8720AE62D90027B508 /* showMasnoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showMasnoryViewController.m; sourceTree = "<group>"; };
 		7532E9F220245A2E00FD6AF2 /* showArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showArrayVC.h; sourceTree = "<group>"; };
 		7532E9F320245A2E00FD6AF2 /* showArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showArrayVC.m; sourceTree = "<group>"; };
 		7532E9F62024720200FD6AF2 /* showYanZhengMaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showYanZhengMaVC.h; sourceTree = "<group>"; };
@@ -1105,6 +1108,15 @@
 			path = "自定义searchbar";
 			sourceTree = "<group>";
 		};
+		7532DF8520AE62B50027B508 /* 约束 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DF8620AE62D90027B508 /* showMasnoryViewController.h */,
+				7532DF8720AE62D90027B508 /* showMasnoryViewController.m */,
+			);
+			path = "约束";
+			sourceTree = "<group>";
+		};
 		7532E9EE202459EA00FD6AF2 /* 数组字符串 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1498,6 +1510,7 @@
 		75701A2F1FDECAB700374E9A /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				7532DF8520AE62B50027B508 /* 约束 */,
 				7532DF6820AC35BC0027B508 /* 搜索 */,
 				7518D2751FF553210008871F /* Category */,
 				7532DEF720AABB190027B508 /* 日历view */,
@@ -2252,6 +2265,7 @@
 				7518D2871FF553210008871F /* UIButton+Category.m in Sources */,
 				751B460A207CB23B002F087C /* showMyKVOVC.m in Sources */,
 				75701B751FDEDD7500374E9A /* JLPieChartData.m in Sources */,
+				7532DF8820AE62D90027B508 /* showMasnoryViewController.m in Sources */,
 				75630DF41FE8DD41008C4998 /* bullViewController.m in Sources */,
 				7532EA29202546B400FD6AF2 /* PKZuoHaoTableViewCell.m in Sources */,
 				7518D28D1FF553210008871F /* NullSafe.m in Sources */,

@@ -38,6 +38,11 @@
 #import "showSearchViewController.h"// 搜索样式
 
 
+
+
+#import "showMasnoryViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -50,7 +55,7 @@
     _window.backgroundColor = [UIColor whiteColor];
     
     
-    showSearchViewController *vc = [[showSearchViewController alloc]init];
+    showMasnoryViewController *vc = [[showMasnoryViewController alloc]init];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
     
     _window.rootViewController = navi;

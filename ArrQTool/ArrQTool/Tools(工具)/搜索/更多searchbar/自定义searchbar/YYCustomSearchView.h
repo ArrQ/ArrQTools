@@ -10,11 +10,11 @@
 
 @interface YYCustomSearchView : UIView
 
-@property(nonatomic,strong) UIImageView *leftImgView;
-@property(nonatomic,strong) UITextField *leftTextField;
-@property(nonatomic,strong) UIButton *rightCancelBtn;
+@property(nonatomic,strong) UIImageView *leftImgView;// 搜索图标
+@property(nonatomic,strong) UITextField *leftTextField;// 搜索内容
 
-@property(nonatomic,strong) UIButton *rightYuyinBtn;
+@property(nonatomic,strong) UIButton *rightYuyinBtn;// 是否语音图标
 
+@property(nonatomic,strong) UIButton *rightCancelBtn;// 取消 按钮
 
 @end

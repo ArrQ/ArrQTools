@@ -10,9 +10,7 @@
 
 @interface YYCustomSearchView ()<UITextFieldDelegate>
 
-
 @property(nonatomic,strong) UIView *searchOneView;
-
 
 @end
 
@@ -22,8 +20,6 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     
     if (self = [super initWithFrame:frame]) {
-        
-        
         
         [self customSubViews];
         
