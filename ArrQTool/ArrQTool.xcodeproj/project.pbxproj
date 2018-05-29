@@ -89,6 +89,9 @@
 		7532DF8020AD35EE0027B508 /* YYSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF7F20AD35EE0027B508 /* YYSearchBarView.m */; };
 		7532DF8420AD56870027B508 /* YYCustomSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF8320AD56870027B508 /* YYCustomSearchView.m */; };
 		7532DF8820AE62D90027B508 /* showMasnoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DF8720AE62D90027B508 /* showMasnoryViewController.m */; };
+		7532DFD320BB8F6C0027B508 /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DFD220BB8F6B0027B508 /* NetWorkTools.m */; };
+		7532DFD620BB94AD0027B508 /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DFD420BB94AD0027B508 /* NetworkingManager.m */; };
+		7532DFD920BB96550027B508 /* showNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532DFD820BB96550027B508 /* showNetWorkViewController.m */; };
 		7532E9F420245A2E00FD6AF2 /* showArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F320245A2E00FD6AF2 /* showArrayVC.m */; };
 		7532E9F82024720200FD6AF2 /* showYanZhengMaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9F72024720200FD6AF2 /* showYanZhengMaVC.m */; };
 		7532E9FE2025413800FD6AF2 /* showTangkuangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7532E9FD2025413800FD6AF2 /* showTangkuangVC.m */; };
@@ -365,6 +368,12 @@
 		7532DF8320AD56870027B508 /* YYCustomSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCustomSearchView.m; sourceTree = "<group>"; };
 		7532DF8620AE62D90027B508 /* showMasnoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showMasnoryViewController.h; sourceTree = "<group>"; };
 		7532DF8720AE62D90027B508 /* showMasnoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showMasnoryViewController.m; sourceTree = "<group>"; };
+		7532DFD120BB8F6B0027B508 /* NetWorkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
+		7532DFD220BB8F6B0027B508 /* NetWorkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
+		7532DFD420BB94AD0027B508 /* NetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingManager.m; sourceTree = "<group>"; };
+		7532DFD520BB94AD0027B508 /* NetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingManager.h; sourceTree = "<group>"; };
+		7532DFD720BB96550027B508 /* showNetWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showNetWorkViewController.h; sourceTree = "<group>"; };
+		7532DFD820BB96550027B508 /* showNetWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showNetWorkViewController.m; sourceTree = "<group>"; };
 		7532E9F220245A2E00FD6AF2 /* showArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showArrayVC.h; sourceTree = "<group>"; };
 		7532E9F320245A2E00FD6AF2 /* showArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showArrayVC.m; sourceTree = "<group>"; };
 		7532E9F62024720200FD6AF2 /* showYanZhengMaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showYanZhengMaVC.h; sourceTree = "<group>"; };
@@ -1117,6 +1126,19 @@
 			path = "约束";
 			sourceTree = "<group>";
 		};
+		7532DFD020BB8BE10027B508 /* 请求工具 */ = {
+			isa = PBXGroup;
+			children = (
+				7532DFD520BB94AD0027B508 /* NetworkingManager.h */,
+				7532DFD420BB94AD0027B508 /* NetworkingManager.m */,
+				7532DFD120BB8F6B0027B508 /* NetWorkTools.h */,
+				7532DFD220BB8F6B0027B508 /* NetWorkTools.m */,
+				7532DFD720BB96550027B508 /* showNetWorkViewController.h */,
+				7532DFD820BB96550027B508 /* showNetWorkViewController.m */,
+			);
+			path = "请求工具";
+			sourceTree = "<group>";
+		};
 		7532E9EE202459EA00FD6AF2 /* 数组字符串 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1510,6 +1532,7 @@
 		75701A2F1FDECAB700374E9A /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				7532DFD020BB8BE10027B508 /* 请求工具 */,
 				7532DF8520AE62B50027B508 /* 约束 */,
 				7532DF6820AC35BC0027B508 /* 搜索 */,
 				7518D2751FF553210008871F /* Category */,
@@ -2205,6 +2228,7 @@
 				75701AB71FDED7AC00374E9A /* DDCellModel.m in Sources */,
 				75701A501FDECE4300374E9A /* SelModel.m in Sources */,
 				75701A8B1FDED4F800374E9A /* showViewController.m in Sources */,
+				7532DFD620BB94AD0027B508 /* NetworkingManager.m in Sources */,
 				7518D2991FF55B220008871F /* DVLineChartView.m in Sources */,
 				7532EA2B202546B400FD6AF2 /* YuLanTableViewCell.m in Sources */,
 				75701B541FDEDC3700374E9A /* DKSHTMLController.m in Sources */,
@@ -2262,6 +2286,7 @@
 				751B5EB1203EB846000F31FE /* DetailTitleView.m in Sources */,
 				75A3A8FB200A4C6500493A34 /* XingXingzuohaoFMDBManager.m in Sources */,
 				75630DEF1FE8AD07008C4998 /* LableViewController.m in Sources */,
+				7532DFD320BB8F6C0027B508 /* NetWorkTools.m in Sources */,
 				7518D2871FF553210008871F /* UIButton+Category.m in Sources */,
 				751B460A207CB23B002F087C /* showMyKVOVC.m in Sources */,
 				75701B751FDEDD7500374E9A /* JLPieChartData.m in Sources */,
@@ -2290,6 +2315,7 @@
 				75701B551FDEDC3700374E9A /* DKSWebViewController.m in Sources */,
 				75701B6E1FDEDD7500374E9A /* JLBaseChart.m in Sources */,
 				754549F51FFB901500A5B3CD /* PXLineChartConst.m in Sources */,
+				7532DFD920BB96550027B508 /* showNetWorkViewController.m in Sources */,
 				7532DEFE20AABB5C0027B508 /* HisCalendarView.m in Sources */,
 				7532EA25202546B400FD6AF2 /* PKshuomingView.m in Sources */,
 				7506B9261FDF949D00DCD6D2 /* allTableViewCell.m in Sources */,
